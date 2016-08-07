@@ -6,7 +6,106 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+	<header class="main-header">
+		<div class="mini-logo">
+			<img src="image/logo.png" width="150" height="60" alt="GlacyShop">
+		</div>
+		<div class="conteiner-menu-left">
+		<nav class="main-navigator">
+			<ul>
+				<li>
+					<a href="">Каталог</a>
+				</li>
+				<li>
+					<a href="">Доставка и оплата</a>
+				</li>
+				<li>
+					<a href="">О Компании</a>
+				</li>
+			</ul>
+		</nav>
+		</div>
+		<div class="conteiner-menu-right">
+			<input type="search" name="q" placeholder="Поиск по сайту"> 
+   			<input type="submit" value="Найти">
+			<img src="image/login.png"><a class="login" href="#">Вход</a></img>
+			<img src="image/basket.png"><a class="login" href="#">Пусто</a></img>
+		</div>
+		<span>С 10 до 20, ежедневно</span>
+		<b>8 812 450-25-25</b>
+	</header>
 
+	<main class="content">
+		<div class="slider">
+			<slide>
+				<img src="" alt="">
+				<h1></h1>
+				<a href="" class="btn"></a>
+			</slide>
+			<slide>
+				<img src="" alt="">
+				<h1></h1>
+				<a href="" class="btn"></a>
+			</slide>
+			<slide>
+				<img src="" alt="">
+				<h1></h1>
+				<a href="" class="btn"></a>
+			</slide>
+		</div>
+		<section class="section-left">
+			<h2>Малинка даром!</h2>
+			<p>При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+			<button>Хочу варенье!</button>
+		</section>
+		<section class="section-right">
+			<h2>Шоколадки даром!</h2>
+			<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснешей шоколадной присыпки совершенно бесплатно.</p>
+			<button>Хочу шоколадки!</button>
+		</section>
+		<div class="image-ice-cream">
+			
+		</div>
+		<section class="advantages">
+			<h2>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
+			<p><img src="image/ice-cream.png" alt="Мороженка">Все наше мороженное изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+			<p><img src="image/raw-material.png" alt="Сырье">Для приготовления мороженного используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+			<p><img src="image/cow.png" alt="Буренка">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничесто.</p>
+			<p><img src="image/thermometer.png" alt="Градусник">Доставка мороженного до заказчиков осуществляется в специальном термопакете, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
+		</section>
+		<div class="news">
+			<span>Новое в нашем блоге</span><br>
+			<a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+		</div>
+		<div class="subscription">
+			<form action= "post.php" method= "POST">
+				<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
+				<input type= "text" name= "email" placeholder="Электронная почта"> 
+				<input type= "submit" value= "Отправить"> 
+		</div>
+		<div class="maps">
+			<img src="image/address.png" width="100%" height="220" alt="Карта">
+		</div>
+	</main>
+
+	<footer class="main-footer">
+			<section class="footer-social">
+				<a href="#" class="social-btn social-btn-vk">Твитер</a>
+				<a href="#" class="social-btn social-btn-fb">Инстаграм</a>
+				<a href="#" class="social-btn social-btn-inst">Фейсбук</a>
+				<a href="#" class="social-btn social-btn-inst">Вконтакте</a>
+			</section>
+			
+			<section class="footer-documentation">
+				<a href="#"><img src="image/heard.png" alt="Сердце">Для поставщиков</a>
+				<a href="#">О производстве</a><br>
+				<a href="#">Наши документы</a>
+				<a href="#">Экологиские стандарты</a>
+			</section>
+			<section class="footer-copyright">
+				<p><img src="image/htmlacademy.png" alt="htmlacademy">html academy</p><br>
+				<p>Сделано в <a class="btn" href="https://htmlacademy.ru">HTML Academy</a> 2016</p>
+			</section>
+	</footer>
   </body>
 </html>
