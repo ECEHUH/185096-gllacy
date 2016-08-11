@@ -31,46 +31,49 @@
 		<span>С 10 до 20, ежедневно</span>
 		<b>8 812 450-25-25</b>
 	</header>
-
 	<main class="content">
 			<ul class="breadcrumbs">
 				<li>
-					Главная
+					<a href="">Главная</a>
 				</li>
 				<li>
-					Каталог
+					<a href="">Каталог</a>
 				</li>
 				<li>
 					Сливочное
 				</li>
 			</ul>
 			<h1>Сливочное мороженое</h1>
-
 		<form class="fillers">
-			<label for="sorting">Сортировка:</label><br>
+		<fieldset>
+			<legend>Сортировка:</legend>
 			<select name="sorting">
 				<option value="по популярности">по популярности</option>
 				<option value="#"></option>
 			</select>
-
-			<label>Цена: 100 руб. - 500 руб.</label>
-			<input type="" name="">
-
-			<label>Жирность:</label>
-			<input type="checkbox" name="">0%
-			<input type="checkbox" name="" checked>до 10%
-			<input type="checkbox" name="">до 30%
-			<input type="checkbox" name="">выше 30%
-			
-			<label>Наполнители:</label>
+		</fieldset>
+		<fieldset>
+			<legend>Цена: 100 руб. - 500 руб.</legend>
+				<input type="" name="price" id="price">
+		</fieldset>
+		<fieldset>
+			<legend>Жирность:</legend>
+			<input type="radio" name="">0%
+			<input type="radio" name="" checked>до 10%
+			<input type="radio" name="">до 30%
+			<input type="radio" name="">выше 30%
+		</fieldset>
+		<fieldset>
+			<legend>Жирность:</legend>
 			<input type="checkbox" name="" checked>шоколадные
 			<input type="checkbox" name="" checked>сахарные присыпки
 			<input type="checkbox" name="">фрукты
 			<input type="checkbox" name="">сиропы
 			<input type="checkbox" name="">джемы
-			<button>Применить</button>
+			<button type="submit">Применить</button>
+		</fieldset>
 		</form>
-
+	<div class="gallery"> 
 		<article class="image-ice-orange">
 			<img src="image/orange.png" width="120" height="120" alt="Апельсиновое">
 			<span>310 Р/кг</span>
@@ -131,6 +134,7 @@
 			<span>420 Р/кг</span>
 			<a href="#">Сливочное с мятным сиропом</a>
 		</article>
+	</div>
 		<div class="buttons">
 			<ul class="btn">
 				<li class="prev">
@@ -157,8 +161,6 @@
 			</ul>
 		</div>
 	</main>
-
-
 	<footer class="main-footer">
 			<section class="footer-social">
 				<a href="#" class="social-btn social-btn-vk">Твитер</a>
@@ -166,7 +168,6 @@
 				<a href="#" class="social-btn social-btn-inst">Фейсбук</a>
 				<a href="#" class="social-btn social-btn-inst">Вконтакте</a>
 			</section>
-			
 			<section class="footer-documentation">
 				<a href="#"><img src="image/heard.png" alt="Сердце">Для поставщиков</a>
 				<a href="#">О производстве</a><br>
