@@ -1,5 +1,7 @@
 body {
 	font-size: 16px; 
 	line-height: 18px; 
+	color: black; 
 	font-weight: bold; 
+	font-family: "RobotoBold";
 }
