@@ -2,12 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Catalog</title>
+    <title>catalog</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 	<header class="main-header">
-			<a href="index.html"><img class="mini-logo" src="image/logo.png" width="150" height="60" alt="GlacyShop"></a>
-		<div class="conteiner-menu-left">
+		<div class="container clearfix">
+			<a href="index.html"><img class="mini-logo" src="img/logo-head.png" width="150" height="60" alt="GlacyShop"></a>
+		<div class="menu-left">
 		<nav class="main-navigator">
 			<ul>
 				<li>
@@ -22,16 +24,18 @@
 			</ul>
 		</nav>
 		</div>
-		<div class="conteiner-menu-right">
+		<div class="menu-right">
 			<input type="search" name="q" placeholder="Поиск по сайту"> 
    			<input type="submit" value="Найти">
-			<a class="login" href="#"><img src="image/login.png">Вход</a>
-			<a class="login" href="#"><img src="image/basket.png">2 товара</a>
+			<a class="login" href="#"><img src="img/login.png">Вход</a>
+			<a class="login" href="#"><img src="img/basket.png">2 товара</a>
+			<span>С 10 до 20, ежедневно</span>
+			<b>8 812 450-25-25</b>
 		</div>
-		<span>С 10 до 20, ежедневно</span>
-		<b>8 812 450-25-25</b>
+		</div>
 	</header>
-	<main class="content">
+	<main class="main-body">
+		<div class="container clearfix">
 			<ul class="breadcrumbs">
 				<li>
 					<a href="">Главная</a>
@@ -44,6 +48,7 @@
 				</li>
 			</ul>
 			<h1>Сливочное мороженое</h1>
+		
 		<form class="fillers">
 		<fieldset>
 			<legend>Сортировка:</legend>
@@ -93,64 +98,65 @@
 		</fieldset>
 		<button type="submit">Применить</button>
 		</form>
+
 	<div class="gallery"> 
-		<article class="image-ice-orange">
-			<img src="image/orange.png" width="120" height="120" alt="Апельсиновое">
+		<article class="ice-cream">
+			<img src="img/ice-orange.png" width="120" height="120" alt="Апельсиновое">
 			<span>310 Р/кг</span>
 			<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 		</article>
-		<article class="image-ice-coffee">
-			<img src="image/orange.png" width="120" height="120" alt="Апельсиновое">
+		<article class="ice-cream">
+			<img src="img/ice-coffee.png" width="120" height="120" alt="Апельсиновое">
 			<span>380 Р/кг</span>
 			<a href="#">Сливочно-кофейное с кусочками шоколада</a>
 		</article>
-		<article class="image-ice-strawberry">
-			<img src="image/orange.png" width="120" height="120" alt="Апельсиновое">
+		<article class="ice-cream">
+			<img src="img/ice-strawberry.png" width="120" height="120" alt="Апельсиновое">
 			<span>355 Р/кг</span>
 			<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
 		</article>
-		<article class="image-ice-caramel">
-			<img src="image/orange.png" width="120" height="120" alt="Апельсиновое">
+		<article class="ice-cream">
+			<img src="img/ice-caramel.png" width="120" height="120" alt="Апельсиновое">
 			<span>415 Р/кг</span>
 			<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
 		</article>
-		<article class="image-ice-cowberry">
-			<img src="image/orange.png" width="120" height="120" alt="Апельсиновое">
+		<article class="ice-cream">
+			<img src="img/cowberry.png" width="120" height="120" alt="Апельсиновое">
 			<span>325 Р/кг</span>
 			<a href="#">Сливочное с брусничным джемом</a>
 		</article>
-		<article class="image-ice-bilberry">
-			<img src="image/orange.png" width="120" height="120" alt="Апельсиновое">
+		<article class="ice-cream">
+			<img src="img/bilberry.png" width="120" height="120" alt="Апельсиновое">
 			<span>410 Р/кг</span>
 			<a href="#">Сливочно-черничное с цельными ягодами черники</a>
 		</article>
-		<article class="image-ice-lemon">
-			<img src="image/orange.png" width="120" height="120" alt="Апельсиновое">
+		<article class="ice-cream">
+			<img src="img/lemon.png" width="120" height="120" alt="Апельсиновое">
 			<span>375 Р/кг</span>
 			<a href="#">Сливочно-лимонное с карамельной присыпкой</a>
 		</article>
-		<article class="image-ice-chocolate">
-			<img src="image/orange.png" width="120" height="120" alt="Апельсиновое">
+		<article class="ice-cream">
+			<img src="img/chocolate-chips.png" width="120" height="120" alt="Апельсиновое">
 			<span>320 Р/кг</span>
 			<a href="#">Сливочное с шоколадной стружкой</a>
 		</article>
-		<article class="image-ice-vanilla">
-			<img src="image/orange.png" width="120" height="120" alt="Апельсиновое">
+		<article class="ice-cream">
+			<img src="img/vanilla.png" width="120" height="120" alt="Апельсиновое">
 			<span>440 Р/кг</span>
 			<a href="#">Сливочно-ванильное с кусочками шоколада</a>
 		</article>
-		<article class="image-ice-menthol">
-			<img src="image/orange.png" width="120" height="120" alt="Апельсиновое">
+		<article class="ice-cream">
+			<img src="img/menthol.png" width="120" height="120" alt="Апельсиновое">
 			<span>435 Р/кг</span>
 			<a href="#">Сливочное с ментоловым сиропом</a>
 		</article>
-		<article class="image-ice-blackchocolate">
-			<img src="image/orange.png" width="120" height="120" alt="Апельсиновое">
+		<article class="ice-cream">
+			<img src="img/black-pieces.png" width="120" height="120" alt="Апельсиновое">
 			<span>355 Р/кг</span>
 			<a href="#">Сливочное с кусочками черного шоколада</a>
 		</article>
-		<article class="image-ice-mint">
-			<img src="image/orange.png" width="120" height="120" alt="Апельсиновое">
+		<article class="ice-cream">
+			<img src="img/mint.png" width="120" height="120" alt="Апельсиновое">
 			<span>420 Р/кг</span>
 			<a href="#">Сливочное с мятным сиропом</a>
 		</article>
@@ -180,24 +186,35 @@
 				</li>
 			</ul>
 		</div>
+		</div>
 	</main>
 	<footer class="main-footer">
+		<div class="container clearfix">
 			<section class="footer-social">
-				<a href="#" class="social-btn social-btn-vk">Твитер</a>
-				<a href="#" class="social-btn social-btn-fb">Инстаграм</a>
-				<a href="#" class="social-btn social-btn-inst">Фейсбук</a>
-				<a href="#" class="social-btn social-btn-inst">Вконтакте</a>
+				<a href="#" class="social-btn social-btn-vk">
+					<img src="img/twiter.png" alt="Твитер">
+				</a>
+				<a href="#" class="social-btn social-btn-fb">
+					<img src="img/instagram.png" alt="Инстаграм">
+				</a>
+				<a href="#" class="social-btn social-btn-inst">
+					<img src="img/fb.png" alt="Фейсбук">
+				</a>
+				<a href="#" class="social-btn social-btn-inst">
+					<img src="img/vk.png" alt="Вконтакте">
+				</a>
 			</section>
 			<section class="footer-documentation">
-				<a href="#"><img src="image/heard.png" alt="Сердце">Для поставщиков</a>
+				<a href="#"><img src="img/heart.png" alt="Сердце">Для поставщиков</a>
 				<a href="#">О производстве</a><br>
 				<a href="#">Наши документы</a>
 				<a href="#">Экологиские стандарты</a>
 			</section>
 			<section class="footer-copyright">
-				<p><img src="image/htmlacademy.png" alt="htmlacademy">html academy</p><br>
+				<p><img src="img/htmlacademy.png" alt="htmlacademy">html academy</p><br>
 				<div>Сделано в <a class="btn" href="https://htmlacademy.ru">HTML Academy</a> 2016</div>
 			</section>
+		</div>
 	</footer>
   </body>
 </html>

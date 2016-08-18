@@ -17,6 +17,9 @@ html, body {
 	width: 1146px; 
 	margin: 0px auto;
 }
+
+/*Style for header*/
+
 .main-header {
 	margin-bottom: 30px;
 }
@@ -41,6 +44,9 @@ html, body {
 	width: 265px;
 	padding-top: 20px;
 }
+
+/*Style for body*/
+
 .slider {
 	text-align: center;
 	margin-bottom: 20px;
@@ -63,8 +69,9 @@ html, body {
 	float: left;
 	width: 267px;
 	margin-right: 25px;
+	margin-bottom: 35px;
 }
-.ice-cream:last-child {
+.ice-cream:nth-child(4n) {
 	margin-right: 0;
 }
 
@@ -92,6 +99,35 @@ html, body {
 	padding-left: 25px;
 	padding-top: 35px;
 }
+/*Style for catalog.html body*/
+
+}
+.breadcrumbs ul {
+	float: left;
+	width: 350px;
+
+}
+.breadcrumbs li{
+	float: left;
+	width: 95px;
+	min-height: 25px;
+
+}
+h1 {
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+.gallery {
+	float: left;
+	margin-bottom: 80px;
+}
+.buttons {
+	float: right;
+}
+/*Style for footer*/
+
 .main-footer {
 	margin-top: 35px;
 }
