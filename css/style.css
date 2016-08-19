@@ -102,29 +102,41 @@ html, body {
 /*Style for catalog.html body*/
 
 }
-.breadcrumbs ul {
-	float: left;
+.breadcrumbs {
 	width: 350px;
 
 }
 .breadcrumbs li{
-	float: left;
+	display: inline-block;
 	width: 95px;
 	min-height: 25px;
 
 }
-h1 {
-	float: left;
+.main-ice-cream {
 	margin-top: 10px;
 	margin-bottom: 40px;
 }
+.ice-cream {
+	width: 23%;
+}
+.fillers {
+	width: 900px;
+	min-height: 130px;
+}
+.set-sorting {
+	display: inline-block;
+}
 
 .gallery {
-	float: left;
+	clear: both;
+	width: 100%;
 	margin-bottom: 80px;
 }
 .buttons {
 	float: right;
+}
+.buttons ul li {
+	display: inline-block;
 }
 /*Style for footer*/
 
