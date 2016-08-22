@@ -97,14 +97,33 @@ html, body {
 	display: block;
 }
 
+/*Style for menu right*/
 .menu-right {
-	float: right;
+	display: inline-block;
 	min-height: 76px;
 	width: 265px;
 	padding-top: 20px;
 }
+.search {
+	width: 32px;
+	height: 32px;
+	padding: 0; 
+	margin: 0;
+	background: #a1b4a9;
+	border-radius: 50%;
+}
 
+.menu-right input[type="search"] {
+	display: none;
+	
+}
+.menu-right input[type="submit"] {
 
+}
+
+.menu-right a {
+
+}
 
 /*Style for body*/
 
