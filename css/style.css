@@ -29,15 +29,25 @@ html, body {
 }
 .menu-left {
 	float: left;
+	margin-top: 10px;
+	padding: 0px;
 	min-height: 76px;
 	width: 700px;
-	padding-top: 15px;
+	
 }
-.main-navigator ul li {
-	float: left;
-	width: 150px;
+.main-navigator li {
+	display: inline-block;
 	min-height: 76px;
+	white-space: nowrap;
+
 }
+
+.main-navigator a {
+	padding: 5px;
+	display: block;
+	color: white;
+}
+.main-navigator a:hover {background: #d07058; border-radius: 5px;text-decoration: none;}
 .menu-right {
 	float: right;
 	min-height: 76px;
@@ -117,7 +127,8 @@ html, body {
 	margin-bottom: 40px;
 }
 .ice-cream {
-	width: 23%;
+	width: 265px;
+	min-height: 35px;
 }
 .fillers {
 	width: 900px;
@@ -128,7 +139,6 @@ html, body {
 }
 
 .gallery {
-	clear: both;
 	width: 100%;
 	margin-bottom: 80px;
 }
