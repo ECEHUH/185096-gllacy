@@ -383,7 +383,6 @@ body > input[type="radio"] {
 	color: black;
 	background: url("C:/Users/ErmolinskiyDS/Documents/GitHub/185096-gllacy/img/strawberry-background.jpg") no-repeat;
 	border-radius: 15px;
-
 }
 .news div {
 	padding: 30px 0px 15px 20px;
@@ -472,12 +471,49 @@ body > input[type="radio"] {
 	float: left;
 	width: 185px;
 	padding: 0 20px;
-	margin-right: 210px;
 }
-.footer-social img {
-	box-shadow: inset 0px 0px 0px 5px #849d8f;
+.social-btn {
+	display: inline-block;
+	width: 34px;
+	height: 34px;
+	font-size: 0;
+	text-decoration: 0;
+	background: #fff;
 	border-radius: 50%;
+
+	box-shadow: inset 0px 0px 0px 5px rgba(194, 206, 199, 0.8);
+	-moz-box-shadow: inset 0px 0px 0px 5px rgba(194, 206, 199, 0.8);
+	-webkit-box-shadow: inset 0px 0px 0px 5px rgba(194, 206, 199, 0.8);
 }
+.social-btn:hover {
+	opacity: 1;
+	box-shadow: inset 0px 0px 0px 5px rgba(194, 206, 199, .7);
+	-moz-box-shadow: inset 0px 0px 0px 5px rgba(194, 206, 199, .7);
+	-webkit-box-shadow: inset 0px 0px 0px 5px rgba(194, 206, 199, .7);
+}
+.social-btn:hover {
+	box-shadow: inset 0px 0px 0px 5px rgba(194, 206, 199, .7);
+	-moz-box-shadow: inset 0px 0px 0px 5px rgba(194, 206, 199, .7);
+	-webkit-box-shadow: inset 0px 0px 0px 5px rgba(194, 206, 199, .7);
+}
+.social-btn:active {
+	box-shadow: inset 0px 0px 0px 2px rgba(0, 0, 0, .1);
+	-moz-box-shadow: inset 0px 0px 0px 5px rgba(0, 0, 0, .4);
+	-webkit-box-shadow: inset 0px 0px 0px 5px rgba(0, 0, 0, .4);
+}
+.social-tw {
+	background: url("C:/Users/Дмитрий/Documents/GitHub/185096-gllacy/img/twiter.png") no-repeat center;
+}
+.social-inst {
+	background: url("C:/Users/Дмитрий/Documents/GitHub/185096-gllacy/img/inst.png") no-repeat center;
+}
+.social-fb {
+	background: url("C:/Users/Дмитрий/Documents/GitHub/185096-gllacy/img/fb.png") no-repeat center;
+}
+.social-vk {
+	background: url("C:/Users/Дмитрий/Documents/GitHub/185096-gllacy/img/vk.png") no-repeat center;
+}
+
 .footer-documentation {
 	float: left;
 	width: 330px;
