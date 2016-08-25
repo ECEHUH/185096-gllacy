@@ -15,10 +15,10 @@ html, body {
 	clear: both;
 }
 .container {
-	width: 1200px;
+	width: 1140px;
 	margin: 0px auto;
 	padding: 0;
-	box-sizing: border-box;
+	
 
 }
 
@@ -28,7 +28,7 @@ body > input[type="radio"] {
 }
 
 .site-wrapper {
-  min-width: 1200px;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
   background-repeat: no-repeat;
@@ -52,12 +52,9 @@ body > input[type="radio"] {
 }
 
 .content-wrapper {
-  width: 1200px;
+  width: 1140px;
   margin: 0 auto;
-  padding: 10px 26px;
-  box-sizing: border-box;
-  border: 1px solid white;
-
+  padding: 0;
 }
 
 .slider {
@@ -248,8 +245,12 @@ body > input[type="radio"] {
 .main-navigator .sub-menu a:active {
 	background: #f6b5a5;
 }
-.main-menu > li:hover .sub-menu {
+.main-menu li:hover .sub-menu {
 	display: block;
+}
+/*Необходим подбор правильных селекторов*/ .sub-menu .ice-assortment a{
+	font-size: 14px;
+	line-height: 16px;
 }
 
 /*Style for menu right*/
@@ -346,15 +347,42 @@ body > input[type="radio"] {
 	padding: 10px 20px 10px 20px;
 }
 .range {
+	display: block;
 	width: 100%;
+	padding: 0;
 	margin-bottom: 40px;
 
 }
 .ice-cream {
+	position: relative;
 	float: left;
-	width: 25%;
-	margin: 0;
+	width: 267px;
+	height: 330px;
+	margin-right: 24px;
+	margin-bottom: 10px;
+	font-size: 16px;
+	line-height: 22px;
+	font-family: "Roboto Medium", "Arial", sans-serif;
 }
+.hit::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 61px;
+	height: 61px;
+	background: url("C:/Users/Дмитрий/Documents/GitHub/185096-gllacy/img/hit.png") no-repeat;
+	
+}
+.ice-cream:nth-child(4n) {
+	margin-right: 0px;
+}
+.ice-cream:hover {
+	background: #aebeb4;
+	box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+}
+
 
 .advantages {
 	width: 100%;
@@ -423,15 +451,11 @@ body > input[type="radio"] {
 
 .fillers {
 	width: 900px;
-	min-height: 130px;
+	height: 130px;
+	margin-bottom: 38px;
 }
 .set-sorting {
 	display: inline-block;
-}
-
-.gallery {
-	width: 100%;
-	margin-bottom: 80px;
 }
 
 .buttons {
@@ -480,7 +504,6 @@ body > input[type="radio"] {
 	height: 30px;
 	font-size: 0;
 	text-decoration: 0;
-	background: #c2cec7;
 	border-radius: 50%;
 	box-shadow: 0px 0px 0px 4px rgba(194, 206, 199, .5);
 	-moz-box-shadow: 0px 0px 0px 4px rgba(194, 206, 199, .5);
@@ -488,14 +511,16 @@ body > input[type="radio"] {
 }
 
 .social-btn:hover {
-	box-shadow: 0px 0px 0px 4px rgba(194, 206, 199, .75);
-	-moz-box-shadow: 0px 0px 0px 4px rgba(194, 206, 199, .75);
-	-webkit-box-shadow: 0px 0px 0px 4px rgba(194, 206, 199, .75);
+	box-shadow: 0px 0px 0px 4px rgba(194, 206, 199, .85);
+	-moz-box-shadow: 0px 0px 0px 4px rgba(194, 206, 199, .85);
+	-webkit-box-shadow: 0px 0px 0px 4px rgba(194, 206, 199, .85);
+
 }
 .social-btn:active {
-	box-shadow: inset 0px 3px 0px 1px rgba(0, 0, 0, 1);
-	-moz-box-shadow: inset 0px 3px 0px 1px rgba(0, 0, 0, 1);
-	-webkit-box-shadow: inset 0px 3px 0px 1px rgba(0, 0, 0, 1);
+	box-shadow: 0px 0px 0px 4px rgba(194, 206, 199, .85), inset 0px 2px 1px 1px rgba(154, 154, 154, 1);
+	-moz-box-shadow: 0px 0px 0px 4px rgba(194, 206, 199, .85), inset 0px 2px 1px 1px rgba(154, 154, 154, 1);
+	-webkit-box-shadow: 0px 0px 0px 4px rgba(194, 206, 199, .85), inset 0px 2px 1px 1px rgba(154, 154, 154, 1);
+
 }
 .social-tw {
 	background: url("C:/Users/Дмитрий/Documents/GitHub/185096-gllacy/img/twiter.png") no-repeat center;
