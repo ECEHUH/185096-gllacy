@@ -147,18 +147,18 @@ body > input[type="radio"] {
 
 #btn-1:checked ~ .site-wrapper {
   background-color: #849d8f;
-  background-image: url("C:/Users/ErmolinskiyDS/Documents/GitHub/185096-gllacy/img/slider-1.png");
+  background-image: url("../img/slider-1.png");
 
 }
 
 #btn-2:checked ~ .site-wrapper {
   background-color: #8996a6;
-  background-image: url("C:/Users/ErmolinskiyDS/Documents/GitHub/185096-gllacy/img/slider-2.png");
+  background-image: url("../img/slider-2.png");
 }
 
 #btn-3:checked ~ .site-wrapper {
   background-color: #9d8b84;
-  background-image: url("C:/Users/ErmolinskiyDS/Documents/GitHub/185096-gllacy/img/slider-3.png");
+  background-image: url("../img/slider-3.png");
 }
 
 #btn-1:checked ~ .site-wrapper label[for="btn-1"],
@@ -230,6 +230,7 @@ body > input[type="radio"] {
 	background: white;
 	border-radius: 5px;
 	box-shadow: 0 10px 12px 3px rgba(0, 0, 0, 0.5);
+	z-index: 100;
 }
 
 
@@ -237,6 +238,7 @@ body > input[type="radio"] {
 	color: black;
 	padding: 20px 20px 15px 20px;
 	text-decoration: none;
+	font-size: 14px;
 }
 .main-navigator .sub-menu a:hover {
 	background: #fbded7;
@@ -295,7 +297,7 @@ body > input[type="radio"] {
 	height: 229px;
 	padding: 0;
 	margin: 0;
-	background: url("C:/Users/ErmolinskiyDS/Documents/GitHub/185096-gllacy/img/raspberries-background.png") no-repeat;
+	background: url("../img/raspberries-background.png") no-repeat;
 }
 .section-right {
 	float: right;
@@ -303,7 +305,7 @@ body > input[type="radio"] {
 	height: 229px;
 	padding: 0;
 	margin: 0;
-	background: url("C:/Users/ErmolinskiyDS/Documents/GitHub/185096-gllacy/img/chocolate.png") no-repeat;
+	background: url("../img/chocolate.png") no-repeat;
 }
 .info-content {
 	padding: 10px 20px 5px 20px;
@@ -342,9 +344,10 @@ body > input[type="radio"] {
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 .promo a{
-	margin-left: 350px;
+	margin-right: 20px;
 	margin-top: 40px;
 	padding: 10px 20px 10px 20px;
+	float: right;
 }
 .range {
 	display: block;
@@ -356,13 +359,16 @@ body > input[type="radio"] {
 .ice-cream {
 	position: relative;
 	float: left;
-	width: 267px;
+	width: 25%;
 	height: 330px;
-	margin-right: 24px;
 	margin-bottom: 10px;
 	font-size: 16px;
 	line-height: 22px;
 	font-family: "Roboto Medium", "Arial", sans-serif;
+	text-align: center;
+}
+.ice-cream img {
+	margin: 0 auto;
 }
 .hit::before {
 	content: "";
@@ -371,7 +377,7 @@ body > input[type="radio"] {
 	left: 0;
 	width: 61px;
 	height: 61px;
-	background: url("C:/Users/Дмитрий/Documents/GitHub/185096-gllacy/img/hit.png") no-repeat;
+	background: url("../img/hit.png") no-repeat;
 	
 }
 .ice-cream:nth-child(4n) {
@@ -388,14 +394,19 @@ body > input[type="radio"] {
 	width: 100%;
 	margin-bottom: 40px;
 	padding: 0px;
-	background-image: url("C:/Users/ErmolinskiyDS/Documents/GitHub/185096-gllacy/img/wafer-background.jpg");
+	background-image: url("../img/wafer-background.jpg");
 	color: black;	
 }
 .advantages-content {
 	float: left;
-	width: 529px;
+	width: 50%;
 	margin: 0;
 	padding: 0px 20px 25px 20px;
+	padding-left: 65px;
+	box-sizing: border-box;
+	background-image: ;
+	background-repeat: no-repeat;
+	padding-top: 22px;
 }
 .advantages-content img{
 	margin-right: 10px
@@ -411,7 +422,7 @@ body > input[type="radio"] {
 	width: 560px;
 	height: 220px;
 	color: black;
-	background: url("C:/Users/ErmolinskiyDS/Documents/GitHub/185096-gllacy/img/strawberry-background.jpg") no-repeat;
+	background: url("../img/strawberry-background.jpg") no-repeat;
 	border-radius: 15px;
 }
 .news div {
@@ -427,7 +438,7 @@ body > input[type="radio"] {
 	width: 560px;
 	height: 220px;
 	color: black;
-	background: url("C:/Users/ErmolinskiyDS/Documents/GitHub/185096-gllacy/img/post-background.jpg") no-repeat;
+	background: url("../img/post-background.jpg") no-repeat;
 	border-radius: 15px;
 }
 .subscription div{
@@ -523,16 +534,16 @@ body > input[type="radio"] {
 
 }
 .social-tw {
-	background: url("C:/Users/Дмитрий/Documents/GitHub/185096-gllacy/img/twiter.png") no-repeat center;
+	background: url("../img/twiter.png") no-repeat center;
 }
 .social-inst {
-	background: url("C:/Users/Дмитрий/Documents/GitHub/185096-gllacy/img/inst.png") no-repeat center;
+	background: url("../img/inst.png") no-repeat center;
 }
 .social-fb {
-	background: url("C:/Users/Дмитрий/Documents/GitHub/185096-gllacy/img/fb.png") no-repeat center;
+	background: url("../img/fb.png") no-repeat center;
 }
 .social-vk {
-	background: url("C:/Users/Дмитрий/Documents/GitHub/185096-gllacy/img/vk.png") no-repeat center;
+	background: url("../img/vk.png") no-repeat center;
 }
 
 
