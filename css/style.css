@@ -199,6 +199,8 @@ body > input[type="radio"] {
 	display: block;
 	padding: 10px;
 	color: white;
+	font-size: 16px
+	line-height: 18px;
 
 }
 .menu a:hover {
@@ -209,7 +211,7 @@ body > input[type="radio"] {
 	text-decoration: none;
 }
 
-.catalog a:hover {
+.show:hover {
 	background: #d07058; 
 	border-radius: 15px;
 	text-decoration: none;
@@ -226,6 +228,9 @@ body > input[type="radio"] {
 	left: -8px;
 	margin: 0;
 	padding: 0;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 16px;
 	list-style: none;
 	background: white;
 	border-radius: 5px;
@@ -236,13 +241,20 @@ body > input[type="radio"] {
 
 .main-navigator .sub-menu a {
 	color: black;
-	padding: 20px 20px 15px 20px;
 	text-decoration: none;
-	font-size: 14px;
+}
+.sub-menu ul {
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+.sub-menu .line {
+	font-weight: bold;
+	border-bottom: 1px solid #000;
 }
 .main-navigator .sub-menu a:hover {
 	background: #fbded7;
 	border-radius: 0;
+	font-weight: normal;
 }
 .main-navigator .sub-menu a:active {
 	background: #f6b5a5;
@@ -251,8 +263,7 @@ body > input[type="radio"] {
 	display: block;
 }
 /*Необходим подбор правильных селекторов*/ .sub-menu .ice-assortment a{
-	font-size: 14px;
-	line-height: 16px;
+	
 }
 
 /*Style for menu right*/
@@ -268,15 +279,20 @@ body > input[type="radio"] {
 	padding: 0; 
 	margin: 0;
 	background: #a1b4a9;
+	background-image: url(../img/search.png);
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	text-align: center;
 	border-radius: 50%;
 }
 
-.menu-right input[type="search"] {
+input[type="search"] {
 	display: none;
 	
 }
-.menu-right input[type="submit"] {
 
+input[type="submit"] {
+	display: none;
 }
 
 .menu-right a {
@@ -393,25 +409,35 @@ body > input[type="radio"] {
 .advantages {
 	width: 100%;
 	margin-bottom: 40px;
-	padding: 0px;
+	padding: 10px 0 0 20px;
 	background-image: url("../img/wafer-background.jpg");
-	color: black;	
+	color: black;
+	box-sizing: border-box;
+	border-radius: 15px;
 }
 .advantages-content {
 	float: left;
-	width: 50%;
+	width: 50%;	
 	margin: 0;
-	padding: 0px 20px 25px 20px;
-	padding-left: 65px;
+	padding: 22px 20px 25px 62px;
 	box-sizing: border-box;
-	background-image: ;
-	background-repeat: no-repeat;
-	padding-top: 22px;
 }
-.advantages-content img{
-	margin-right: 10px
+.iconica1 {
+	background: no-repeat;
+	background-image: url("../img/ice-cream.png");
 }
-
+.iconica2 {
+	background: no-repeat;
+	background-image: url("../img/leaf.png");
+}
+.iconica3 {
+	background: no-repeat;
+	background-image: url("../img/cow.png");
+}
+.iconica4 {
+	background: no-repeat;
+	background-image: url("../img/thermometer.png");
+}
 .block {
 	width: 100%;
 	margin-bottom: 40px;
