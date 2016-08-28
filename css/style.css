@@ -34,7 +34,6 @@ body > input[type="radio"] {
   background-repeat: no-repeat;
   background-position: top center;
   transition: background-image 0.5s ease, background-color 0.5s ease;
-
 }
 .site-wrapper:before,
 .site-wrapper:after {
@@ -55,6 +54,7 @@ body > input[type="radio"] {
   width: 1140px;
   margin: 0 auto;
   padding: 0;
+  border: 1px solid white;
 }
 
 .slider {
@@ -166,6 +166,7 @@ body > input[type="radio"] {
 #btn-3:checked ~ .site-wrapper label[for="btn-3"] {
   background-color: #ffffff;
 }
+/*The end*/
 
 /*Style for header*/
 
@@ -195,32 +196,44 @@ body > input[type="radio"] {
 	min-height: 76px;
 	white-space: nowrap;
 }
-.main-navigator a {
-	display: block;
-	padding: 10px;
+
+.main-menu > li > a {
+	display: inline-block;
+	margin-right: 25px;
+	padding: 10px 0px 0px 0px;
 	color: white;
 	font-size: 16px
 	line-height: 18px;
-
+	text-decoration: none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
-.menu a:hover {
+
+.main-menu > li > a:hover {
+	padding: 10px 12px;
 	color: black;
 	font-weight: bold;
-	border-radius: 15px;
+	border-radius: 20px;
 	background: white;
 	text-decoration: none;
 }
 
-.show:hover {
+/*Catalog menu hover*/
+.main-menu .catalog-menu{
+	padding: 10px 12px;
 	background: #d07058; 
-	border-radius: 15px;
+	border-radius: 20px;
 	text-decoration: none;
 }
-.main-menu .show:active {
+
+.main-menu > li > a:active {
+	color: black;
+	border-radius: 20px;
+	background: white;
+	text-decoration: none;
 	box-shadow:inset 0 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
-
-.main-navigator .sub-menu {
+/*Style for sub-menu*/
+.main-menu .sub-menu {
 	position: absolute;
 	display: none;
 	width: 144px;
@@ -229,8 +242,8 @@ body > input[type="radio"] {
 	margin: 0;
 	padding: 0;
 	font-size: 14px;
-	font-weight: normal;
 	line-height: 16px;
+	font-weight: normal;
 	list-style: none;
 	background: white;
 	border-radius: 5px;
@@ -238,48 +251,86 @@ body > input[type="radio"] {
 	z-index: 100;
 }
 
+ul:hover .sub-menu {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
 
-.main-navigator .sub-menu a {
+.sub-menu li:first-child {
+	font-weight: bold;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	margin: 0;
+	padding: 0;
+}
+
+.sub-menu a {
+	display: block;
+	padding: 10px 15px;
 	color: black;
 	text-decoration: none;
 }
-.sub-menu ul {
-	padding: 0 10px;
-	box-sizing: border-box;
-}
-.sub-menu .line {
-	font-weight: bold;
-	border-bottom: 1px solid #000;
-}
-.main-navigator .sub-menu a:hover {
+
+.sub-menu a:hover {
+	padding: 10px 15px;
 	background: #fbded7;
 	border-radius: 0;
 	font-weight: normal;
 }
-.main-navigator .sub-menu a:active {
+
+.sub-menu a:active {
 	background: #f6b5a5;
-}
-.main-menu li:hover .sub-menu {
-	display: block;
-}
-/*Необходим подбор правильных селекторов*/ .sub-menu .ice-assortment a{
-	
 }
 
 /*Style for menu right*/
 .menu-right {
-	display: inline-block;
+	float: right;
 	min-height: 76px;
 	width: 265px;
 	padding-top: 20px;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: normal;
 }
+
+
+.login {
+	margin-left: 10px;
+	padding: 10px 15px 10px 35px;
+	text-decoration: none;
+	text-align: right;
+	color: white;
+	background: #a1b4a9;
+	background-image: url("../img/spritesheet.png");
+	background-position: 4px -26px;
+	background-repeat: no-repeat;
+	border-radius: 20px;
+}
+
+.basket {
+	display: inline-block;
+	min-width: 88px;
+	
+	padding: 10px 30px 10px 0px;
+	text-decoration: none;
+	text-align: right;
+	vertical-align: middle;
+	color: white;
+	background: #a1b4a9;
+	background-image: url("../img/spritesheet.png");
+	background-position: 12px 5px;
+	background-repeat: no-repeat;
+	border-radius: 20px;
+}
+
 .search {
+	display: inline-block;
 	width: 32px;
 	height: 32px;
 	padding: 0; 
 	margin: 0;
 	background: #a1b4a9;
-	background-image: url(../img/search.png);
+	background-image: url("../img/search.png");
 	background-repeat: no-repeat;
 	vertical-align: middle;
 	text-align: center;
@@ -295,10 +346,18 @@ input[type="search"] {
 	display: none;
 }
 
-.menu-right a {
-
+.main-header .num-phone {
+	margin-top: 5px;
+	font-size: 22px;
+	line-height: 24px;
+	font-weight: bold;
 }
-
+.main-header .time-work {
+	margin-top: 20px;
+}
+.main-header .num-phone, .main-header .time-work {
+	float: right;
+}
 /*Style for body*/
 
 .promo {
@@ -412,7 +471,8 @@ input[type="search"] {
 .ice-cream:nth-child(4n) {
 	margin-right: 0px;
 }
-.ice-cream:hover{
+
+.ice-cream:hover {
 	position: relative;
 	background: #aebeb4;
 	box-shadow: 15px 15px 35px 0px rgba(0, 0, 0, 0.1);
@@ -422,6 +482,16 @@ input[type="search"] {
 .ice-cream:hover .quick-view {
 	display: inline-block;
 }
+
+
+.specification {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: normal;
+	text-decoration: none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 
 .advantages {
 	width: 100%;
@@ -548,23 +618,84 @@ input[type="search"] {
 	min-height: 25px;
 
 }
-
+/*Style for form*/
 .fillers {
 	width: 900px;
 	height: 130px;
 	margin-bottom: 38px;
+	padding: 0;
+
 }
 .set-sorting {
 	display: inline-block;
+	border: none;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
 }
+.set-sorting select {
+	border-radius: 15px;
+	padding: 5px;
+	background: rgba(255, 255, 255, 0.3);
+}
+.fillers legend {
+	margin-bottom: 5px;
+}
+
+/*The end*/
 
 .buttons {
 	float: right;
+	width: 220px;
+	padding: 0;
+	margin: 0;
 }
 .buttons ul li {
 	display: inline-block;
+	padding: 0;
+	margin: 0;
 }
+.buttons a {
+	text-decoration: none;
+	color: #ffffff;
+	font-family: "Roboto Medium", sans-serif;
+	font-weight: normal;
+	padding: 1px 6px;
+}
+.buttons a:hover {
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.3);
+	padding: 1px 6px;
 
+}
+.buttons a:active {	
+	border-radius: 50%;
+	color: black;
+	background: #ffffff;
+	box-shadow: 0 0 10px 20px rgba(255, 255, 255, 0);
+	padding: 1px 6px;
+}
+.buttons .one-click {
+	border-radius: 50%;
+	padding: 1px 6px;
+	color: black;
+	background: #ffffff;
+
+}
+.btn .prev {
+	background-image: url("../img/sprites-arrows.png");
+	background-position: -149px -197px; 
+	width: 9px;
+	height: 14px;
+	margin-right: 8px;
+}
+.btn .next {
+	background-image: url("../img/sprites-arrows.png");
+	background-position: -205px -154px;
+	width: 9px;
+	height: 17px;
+	margin-left: 8px;
+}
 .coordinates {
 	position: relative;
 	border: 1px solid white;
@@ -669,7 +800,6 @@ input[type="search"] {
 	background: url("../img/heart.png") no-repeat;
 	opacity: 1;
 
-
 }
 
 .footer-copyright {
@@ -682,7 +812,3 @@ input[type="search"] {
 	color: #ffffff;
 
 }
-
-/*	box-shadow: inset 0px 0px 0px 4px rgba(194, 206, 199, 0.5);
-	-moz-box-shadow: inset 0px 0px 0px 4px rgba(194, 206, 199, 0.5);
-	-webkit-box-shadow: inset 0px 0px 0px 4px rgba(194, 206, 199, 0.5);*/
