@@ -224,7 +224,7 @@ body > input[type="radio"] {
 }
 /*Catalog menu hover*/
 .main-menu .catalog-menu{
-	padding: 10px 12px;
+	padding: 10px;
 	background: #d07058; 
 	border-radius: 20px;
 	text-decoration: none;
@@ -264,7 +264,6 @@ body > input[type="radio"] {
 
 .sub-menu li:first-child {
 	font-weight: bold;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 	margin: 0;
 	padding: 0;
 }
@@ -274,17 +273,23 @@ body > input[type="radio"] {
 	padding: 10px 15px;
 	color: black;
 	text-decoration: none;
-	font-weight: normal;
 }
 
-.sub-menu a:hover {
+a.new {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	margin-right: 5px;
+	margin-left: 5px;
+	padding-left: 10px;
+	padding-right: 0;
+}
+.sub-menu .ice-assortment:hover {
 	padding: 10px 15px;
 	background: #fbded7;
 	border-radius: 0;
 	font-weight: normal;
 }
 
-.sub-menu a:active {
+.sub-menu .ice-assortment:active {
 	background: #f6b5a5;
 }
 
@@ -302,43 +307,83 @@ body > input[type="radio"] {
 .login {
 	display: inline-block;
 	width: 60px;
-	padding: 10px 15px 10px 15px;
+	padding: 8px 15px 10px 15px;
 	text-decoration: none;
 	text-align: right;
-	vertical-align: middle;
+	vertical-align: top;
 	color: white;
 	background: #a1b4a9;
 	background-image: url("../img/spritesheet.png");
-	background-position: 10px -26px;
+	background-position: 10px -28px;
 	background-repeat: no-repeat;
 	border-radius: 20px;
 }
-
+.login:hover {
+	display: inline-block;
+	width: 60px;
+	padding: 8px 15px 10px 15px;
+	text-decoration: none;
+	text-align: right;
+	vertical-align: top;
+	color: black;
+	background: #ffffff;
+	background-image: url("../img/exit-black.png");
+	background-position: 16px 8px;
+	background-repeat: no-repeat;
+}
 .basket {
 	display: inline-block;
 	width: 80px;
-	padding: 10px 44px 10px 10px;
+	padding: 8px 44px 10px 10px;
 	margin: 0;
 	text-decoration: none;
 	text-align: right;
-	vertical-align: middle;
+	vertical-align: top;
 	color: white;
 	background: #a1b4a9;
 	background-image: url("../img/spritesheet.png");
-	background-position: 12px 5px;
+	background-position: 12px 3px;
 	background-repeat: no-repeat;
 	border-radius: 20px;
 }
-
+.basket-full {
+	display: inline-block;
+	width: 80px;
+	padding: 8px 26px 10px 22px;
+	margin: 0;
+	text-decoration: none;
+	text-align: right;
+	vertical-align: top;
+	color: black;
+	background: #ffffff;
+	background-image: url("../img/basket-full.png");
+	background-position: 14px 7px;
+	background-repeat: no-repeat;
+	border-radius: 20px;
+}
+.basket-full a {
+	text-align: right;
+}
 .search {
 	display: inline-block;
 	width: 32px;
 	height: 32px;
-	margin: 10px 0 0 0;
+	margin: 1px 0;
 	background: #a1b4a9;
 	background-image: url("../img/spritesheet.png");
 	background-repeat: no-repeat;
 	background-position: 2px -56px;
+	border-radius: 50%;
+}
+.search:hover{
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	margin: 1px 0;
+	background: #ffffff;
+	background-image: url("../img/spritesheet.png");
+	background-repeat: no-repeat;
+	background-position: 2px -84px;
 	border-radius: 50%;
 }
 
@@ -454,6 +499,7 @@ input[type="search"] {
 .ice-cream img {
 	margin: 0 auto;
 }
+
 .ice-cream .price {
 	position: absolute;
 	bottom: 116px;
@@ -471,25 +517,30 @@ input[type="search"] {
 	background: url("../img/hit.png") no-repeat;
 	
 }
-/*.display-btn:hover {
-display: none;
-position: absolute;
-top: -9px;
-left: -10px;
-width: 220px;
-height: 362px;
-z-index: 20;
-padding: 9px 10px;
-background-color: rgba(255, 255, 255, 0.3);
-border-radius: 5px;
-box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+.ice-cream .display-btn {
+	
 }
-*/
+.ice-cream .display-btn:hover {
+	display: block;
+	position: absolute;
+	top: -9px;
+	left: -10px;
+	width: 220px;
+	height: 362px;
+	z-index: 14;
+	padding: 9px 10px;
+	background-color: rgba(255, 255, 255, 0.3);
+	background-repeat: no-repeat;
+	background-position: center 9px;
+	border-radius: 5px;
+	box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
 .ice-cream:nth-child(4n) {
 	margin-right: 0px;
 }
 
-.ice-cream:hover {
+/*.ice-cream:hover {
 	position: relative;
 	height: 370px;
 	background: #aebeb4;
@@ -497,15 +548,8 @@ box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 	border-radius: 5px;
 	z-index: 100;
 }
-
+*/
 /*Кнопка для быстрого просмотра*/
-.ice-cream .quick-view{
-	display: none;
-}
-.ice-cream:hover .quick-view {
-	display: inline-block;
-}
-
 
 .specification {
 	font-size: 16px;
@@ -644,14 +688,50 @@ box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 
 }
 .breadcrumbs {
+	margin: 0;
+	padding: 0;
 	width: 350px;
-
 }
 .breadcrumbs li{
 	display: inline-block;
-	width: 95px;
+	margin-right: 20px;
+	padding: 0;
 	min-height: 25px;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
 
+}
+.breadcrumbs a {
+	margin: 0;
+	padding: 0;
+	display: block;
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 16px;
+
+}
+.breadcrumbs a::after {
+	display: block;
+	content: " ";
+	height: 1px;
+	padding-top: 0;
+	background: rgba(256, 256, 256, 0.3);
+}
+.ars a::after {
+	display: block;
+	content: " ";
+	width: 5px;
+	height: 5px;
+	background-image: url("../img/spr-arrows.png");
+	background-position: ;
+}
+.main-ice-cream {
+	font-size: 35px;
+	line-height: 41px;
+	margin-bottom: 25px;
+	margin-top: -20px;
 }
 /*Style for form*/
 .fillers {
@@ -659,6 +739,7 @@ box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 	height: 130px;
 	margin-bottom: 38px;
 	padding: 0;
+	font-weight: normal;
 
 }
 .set-sorting {
@@ -670,13 +751,52 @@ box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 .set-sorting select {
 	border-radius: 15px;
-	padding: 5px;
-	background: rgba(255, 255, 255, 0.3);
+	padding: 5px 8px;
+	background: #a1b4a9;
+	border: none;
+	color: #ffffff;
+}
+.set-sorting select:hover {
+	border-radius: 15px;
+	padding: 5px 8px;
+	background: #ffffff;
+	border: none;
+	color: #000000;
+}
+.set-sorting input {
+	display: none;
+}
+.set-sorting label {
+	background: #a1b4a9;
+	padding: 6px 10px;
+	border-radius: 15px
 }
 .fillers legend {
 	margin-bottom: 5px;
 }
+.apply {
+	padding: 4px 16px;
+	border: 2px solid #ffffff;
+	border-radius: 15px;
+	color: #ffffff;
+	background: #a1b4a9;	
+}
+.apply:hover {
+	padding: 4px 16px;
+	border: 2px solid #ffffff;
+	border-radius: 15px;
+	color: #000000;
+	background: #ffffff;	
+}
+.apply:active {
+	padding: 4px 16px;
+	border: 2px solid #ffffff;
+	border-radius: 15px;
+	color: #000000;
+	background: rgba(255, 255, 255, 0.9);
+	box-shadow:inset 0 1px 1px 0px rgba(0, 0, 0, 0.5);
 
+}
 /*The end*/
 
 .buttons {
@@ -684,6 +804,7 @@ box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 	width: 220px;
 	padding: 0;
 	margin: 0;
+
 }
 .buttons ul li {
 	display: inline-block;

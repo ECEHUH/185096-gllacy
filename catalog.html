@@ -28,12 +28,14 @@
 		</nav>
 		</div>
 		<div class="menu-right">
-			<input type="search" name="q" placeholder="Поиск по сайту"> 
-   			<input type="submit" value="Найти">
-			<a class="login" href="#"><img src="img/login.png">Вход</a>
-			<a class="login" href="#"><img src="img/basket.png">2 товара</a>
-			<span>С 10 до 20, ежедневно</span>
-			<b>8 812 450-25-25</b>
+			<form class="search" action="/search" method="get">
+				<input class="input" type="search" name="search" placeholder="Что ищем?"> 
+   				<input class="submit" type="submit" value="">
+   			</form>
+			<a class="login" href="#">Вход</a>
+			<a class="basket-full" href="#">2 товара</a>
+			<div class="time-work">С 10 до 20, ежедневно</div>
+			<div class="num-phone">8 812 450-25-25</div>
 		</div>
 		</div>
 	</header>
@@ -41,10 +43,10 @@
 		<div class="container clearfix">
 			<ul class="breadcrumbs">
 				<li>
-					<a href="">Главная</a>
+					<a class="ars" href="">Главная</a>
 				</li>
 				<li>
-					<a href="">Каталог</a>
+					<a class="ars" href="">Каталог</a>
 				</li>
 				<li>
 					Сливочное
