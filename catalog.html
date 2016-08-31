@@ -54,19 +54,18 @@
 			</ul>
 			<h1 class="main-ice-cream">Сливочное мороженое</h1>
 		
+
 		<form class="fillers">
 		<fieldset class="set-sorting">
 			<legend>Сортировка:</legend>
-			<select name="sorting">
-				<option value="по популярности">по популярности</option>
-				<option value="#"></option>
-			</select>
+				<input class="popularity" value="по популярности">по популярности</input>
 		</fieldset>
-		<fieldset class="set-sorting">
-			<legend>Цена: 100 руб. - 500 руб.</legend>
-				<label for="">
-					<input type="" name="price" id="price">
-				</label>
+		<fieldset class="set-sorting">Цена: 100 руб. - 500 руб.
+			<div class="range-controls">
+			<div class="scale"><div style="margin-left:20px; margin-right: 20px; width: 110px" class="bar"></div></div>
+			<div class="toggle min-toggle"></div>
+			<div class="toggle max-toggle"></div>
+			</div>
 		</fieldset>
 		<fieldset class="set-sorting">
 			<legend>Жирность:</legend>
@@ -117,67 +116,89 @@
 			<img src="img/ice-coffee.png" width="267" height="267" alt="Апельсиновое">
 			<span class="price">380 Р/кг</span>
 			<a class="specification" href="#">Сливочно-кофейное с кусочками шоколада</a>
-			<a class="quick-view get-btn" href="">Быстрый просмотр</a>
+			<div class="display-btn">
+				<a class="quick-view get-btn" href="">Быстрый просмотр</a>
+			</div>
 		</article>
 		<article class="ice-cream">
 			<img src="img/ice-strawberry.png" width="267" height="267" alt="Апельсиновое">
 			<span class="price">355 Р/кг</span>
 			<a class="specification" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-			<a class="quick-view get-btn" href="">Быстрый просмотр</a>
+			<div class="display-btn">
+				<a class="quick-view get-btn" href="">Быстрый просмотр</a>
+			</div>
 		</article>
 		<article class="ice-cream">
 			<img src="img/ice-caramel.png" width="267" height="267" alt="Апельсиновое">
 			<span class="price">415 Р/кг</span>
 			<a class="specification" href="#">Сливочное крем-брюле с карамельной подливкой</a>
-			<a class="quick-view get-btn" href="">Быстрый просмотр</a>
+			<div class="display-btn">
+				<a class="quick-view get-btn" href="">Быстрый просмотр</a>
+			</div>
 		</article>
 		<article class="ice-cream">
 			<img src="img/cowberry.png" width="267" height="267" alt="Апельсиновое">
 			<span class="price">325 Р/кг</span>
 			<a class="specification" href="#">Сливочное с брусничным джемом</a>
-			<a class="quick-view get-btn" href="">Быстрый просмотр</a>
+			<div class="display-btn">
+				<a class="quick-view get-btn" href="">Быстрый просмотр</a>
+			</div>
 		</article>
 		<article class="ice-cream">
 			<img src="img/bilberry.png" width="267" height="267" alt="Апельсиновое">
 			<span class="price">410 Р/кг</span>
 			<a class="specification" href="#">Сливочно-черничное с цельными ягодами черники</a>
-			<a class="quick-view get-btn" href="">Быстрый просмотр</a>
+			<div class="display-btn">
+				<a class="quick-view get-btn" href="">Быстрый просмотр</a>
+			</div>
 		</article>
 		<article class="ice-cream">
 			<img src="img/lemon.png" width="267" height="267" alt="Апельсиновое">
 			<span class="price">375 Р/кг</span>
 			<a class="specification" href="#">Сливочно-лимонное с карамельной присыпкой</a>
-			<a class="quick-view get-btn" href="">Быстрый просмотр</a>
+			<div class="display-btn">
+				<a class="quick-view get-btn" href="">Быстрый просмотр</a>
+			</div>
 		</article>
 		<article class="ice-cream">
 			<img src="img/chocolate-chips.png" width="267" height="267" alt="Апельсиновое">
 			<span class="price">320 Р/кг</span>
 			<a class="specification" href="#">Сливочное с шоколадной стружкой</a>
-			<a class="quick-view get-btn" href="">Быстрый просмотр</a>
+			<div class="display-btn">
+				<a class="quick-view get-btn" href="">Быстрый просмотр</a>
+			</div>
 		</article>
 		<article class="ice-cream">
 			<img src="img/vanilla.png" width="267" height="267" alt="Апельсиновое">
 			<span class="price">440 Р/кг</span>
 			<a class="specification" href="#">Сливочно-ванильное с кусочками шоколада</a>
-			<a class="qquick-view get-btn" href="">Быстрый просмотр</a>
+			<div class="display-btn">
+				<a class="quick-view get-btn" href="">Быстрый просмотр</a>
+			</div>
 		</article>
 		<article class="ice-cream">
 			<img src="img/menthol.png" width="267" height="267" alt="Апельсиновое">
 			<span class="price">435 Р/кг</span>
 			<a class="specification" href="#">Сливочное с ментоловым сиропом</a>
-			<a class="quick-view get-btn" href="">Быстрый просмотр</a>
+			<div class="display-btn">
+				<a class="quick-view get-btn" href="">Быстрый просмотр</a>
+			</div>
 		</article>
 		<article class="ice-cream">
 			<img src="img/black-pieces.png" width="267" height="267" alt="Апельсиновое">
 			<span class="price">355 Р/кг</span>
 			<a class="specification" href="#">Сливочное с кусочками черного шоколада</a>
-			<a class="quick-view get-btn" href="">Быстрый просмотр</a>
+			<div class="display-btn">
+				<a class="quick-view get-btn" href="">Быстрый просмотр</a>
+			</div>
 		</article>
 		<article class="ice-cream">
 			<img src="img/mint.png" width="267s" height="267" alt="Апельсиновое">
 			<span class="price">420 Р/кг</span>
 			<a class="specification" href="#">Сливочное с мятным сиропом</a>
-			<a class="quick-view get-btn" href="">Быстрый просмотр</a>
+			<div class="display-btn">
+				<a class="quick-view get-btn" href="">Быстрый просмотр</a>
+			</div>
 		</article>
 	</div>
 		<div class="buttons">
@@ -217,8 +238,8 @@
 			</section>
 			<section class="footer-documentation">
 				<a class="for-providers" href="#">Для поставщиков</a>
-				<a href="#">О производстве</a>
 				<a href="#">Наши документы</a>
+				<a href="#">О производстве</a>
 				<a href="#">Экологиские стандарты</a>
 			</section>
 			<section class="footer-copyright">

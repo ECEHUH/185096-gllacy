@@ -125,17 +125,26 @@ body > input[type="radio"] {
 }
 
 .slider-controls label {
-  display: inline-block;
-  width: 17px;
-  height: 17px;
-  margin-right: 8px;
-
-  vertical-align: top;
-
-  background-color: transparent;
-  border: 2px solid #ffffff;
-  border-radius: 50%;
-  cursor: pointer;
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	margin-right: 8px;
+	vertical-align: top;
+	background-color: transparent;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.slider-controls label:hover {
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	margin-right: 8px;
+	vertical-align: top;
+	background-color: #a1b4a9;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
+	cursor: pointer;
 }
 
 #btn-1:checked ~ .site-wrapper #slide1,
@@ -165,6 +174,7 @@ body > input[type="radio"] {
 #btn-3:checked ~ .site-wrapper label[for="btn-3"] {
   background-color: #ffffff;
 }
+
 /*The end*/
 
 /*Style for header*/
@@ -229,7 +239,9 @@ body > input[type="radio"] {
 	border-radius: 20px;
 	text-decoration: none;
 }
-
+.main-menu .catalog-menu::after {
+	display: none;
+}
 .main-menu > li > a:active {
 	color: black;
 	border-radius: 20px;
@@ -496,11 +508,10 @@ input[type="search"] {
 .ice-cream a {
 	color: #ffffff;
 }
-
 .ice-cream img {
-	margin: 0 auto;
+	margin: 5px auto;
+	margin-bottom: 10px;
 }
-
 .ice-cream .price {
 	position: absolute;
 	bottom: 116px;
@@ -511,32 +522,38 @@ input[type="search"] {
 .hit::before {
 	content: "";
 	position: absolute;
-	top: 0;
+	top: 2px;
 	left: 0;
 	width: 61px;
 	height: 61px;
 	background: url("../img/hit.png") no-repeat;
-	
 }
-
-
 .display-btn {
 	display: none;
 }
 .ice-cream:hover .display-btn { 
-display: block; 
-position: absolute; 
-bottom: 10px; 
-left: 0px; 
-width: 265px; 
-height: 362px; 
-z-index: 14; 
-padding: 9px 10px; 
-background-color: rgba(255, 255, 255, 0.3); 
-background-repeat: no-repeat; 
-background-position: center 9px; 
-border-radius: 5px; 
-box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4); 
+	display: block; 
+	position: absolute; 
+	bottom: -30px;
+	left: 0px; 
+	width: 265px; 
+	height: 400px; 
+	z-index: 100; 
+	padding: 8px 10px; 
+	background-color: rgba(255, 255, 255, 0.3); 
+	background-repeat: no-repeat; 
+	background-position: center 9px; 
+	border-radius: 5px; 
+	box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+	text-decoration: none; 
+}
+.ice-cream:hover .specification {
+	border-bottom: none;
+}
+.quick-view {
+	position: absolute;
+	bottom: 20px;
+	left: 15px;
 }
 /*
 .ice-cream .quick-view:hover {
@@ -571,6 +588,7 @@ box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 /*Кнопка для быстрого просмотра*/
 
 .specification {
+	margin: 0 5px;
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: normal;
@@ -761,6 +779,9 @@ box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 	font-weight: normal;
 
 }
+.fillers legend {
+	margin-bottom: 5px;
+}
 .set-sorting {
 	display: inline-block;
 	border: none;
@@ -785,14 +806,16 @@ box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 .set-sorting input {
 	display: none;
 }
+.popularity {
+	display: inline-block;
+	background: #ffffff;
+}
 .set-sorting label {
 	background: #a1b4a9;
 	padding: 6px 10px;
 	border-radius: 15px
 }
-.fillers legend {
-	margin-bottom: 5px;
-}
+
 .apply {
 	padding: 4px 16px;
 	border: 2px solid #ffffff;
@@ -800,6 +823,7 @@ box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 	color: #ffffff;
 	background: #a1b4a9;	
 }
+/*Кнопка применить*/
 .apply:hover {
 	padding: 4px 16px;
 	border: 2px solid #ffffff;
@@ -816,6 +840,47 @@ box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 	box-shadow:inset 0 1px 1px 0px rgba(0, 0, 0, 0.5);
 
 }
+
+/*Style for input range-controls*/
+.fillers .range-controls {
+	position: relative;
+	height: 20px;
+	padding: 5px 10px;
+	background: #a1b4a9;
+	border-radius: 15px;
+	
+}
+.fillers .scale {
+	margin-top: 8px;
+	height:2px;
+	background:#d7dcde;
+}
+.fillers .bar {
+    height:2px;
+    background:#ffffff;
+}
+.fillers .toggle {
+    position:absolute;
+    top: 6px;
+    left: 35px;
+    width: 2px;
+    height: 2px;
+    border: 8px solid white;
+    background: #ffffff;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.fillers .min-toggle {
+    left: 30px;
+}
+.fillers .max-toggle {
+    left: 120px;
+}
+
+
+
+
+
 /*The end*/
 
 .buttons {
@@ -1009,27 +1074,39 @@ box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 	float: left;
 	width: 335px;
 	margin-left: 200px;
-	font-family: "Roboto Regular";
+	font-weight: normal;
 }
 .footer-documentation a {
 	display: inline-block;
 	padding: 0 10px 0 18px;
 	color: #ffffff;
 	font-size: 13px;
-	line-height: 18px;
+	line-height: 16px;
 	opacity: 0.7;
+	text-decoration: none;
 }
 .footer-documentation a:hover {
 	background: url("../img/heart.png") no-repeat;
 	opacity: 1;
-
 }
-
+.footer-documentation a::after {
+	display: block;
+	content: " ";
+	height: 1px;
+	padding-top: 0;
+	background: rgba(256, 256, 256, 0.3);
+}
+.footer-documentation .for-providers {
+	background: url("../img/heart.png") no-repeat;
+	color: #ffffff;
+	opacity: 1;
+}
 .footer-copyright {
 	float: right;
-	font-size: 12px;
-	line-height: 18px;
 	margin: -15px 0 0 0;
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: normal;
 }
 .footer-copyright a {
 	color: #ffffff;
