@@ -317,6 +317,7 @@ a.new {
 }
 
 .login {
+	position: relative;
 	display: inline-block;
 	width: 60px;
 	padding: 8px 15px 10px 15px;
@@ -343,6 +344,13 @@ a.new {
 	background-position: 16px 8px;
 	background-repeat: no-repeat;
 }
+.login2 {
+	
+}
+.login:hover .login2 {
+
+}
+
 .basket {
 	display: inline-block;
 	width: 80px;
@@ -453,7 +461,8 @@ input[type="search"] {
 }
 .get-btn {
   display: inline-block;
-  padding: 12px 50px;
+  padding: 12px 25px;
+  font-size: 18px;
   font-weight: 600;
   vertical-align: top;
   color: #ffffff;
@@ -481,6 +490,9 @@ input[type="search"] {
   background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
+.main-body {
+	margin-bottom: 30px;
+}
 .promo a{
 	margin-right: 20px;
 	margin-top: 40px;
@@ -491,7 +503,7 @@ input[type="search"] {
 	display: block;
 	width: 100%;
 	padding: 0;
-	margin-bottom: 0px;
+	margin-bottom: 35px;
 
 }
 .ice-cream {
@@ -553,38 +565,14 @@ input[type="search"] {
 .quick-view {
 	position: absolute;
 	bottom: 20px;
-	left: 15px;
+	left: 28px;
 }
-/*
-.ice-cream .quick-view:hover {
-	display: block;
-	position: absolute;
-	top: -9px;
-	left: -10px;
-	width: 220px;
-	height: 362px;
-	z-index: 14;
-	padding: 9px 10px;
-	background-color: rgba(255, 255, 255, 0.3);
-	background-repeat: no-repeat;
-	background-position: center 9px;
-	border-radius: 5px;
-	box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
-}
-*/
+
 .ice-cream:nth-child(4n) {
 	margin-right: 0px;
 }
 
-/*.ice-cream:hover {
-	position: relative;
-	height: 370px;
-	background: #aebeb4;
-	box-shadow: 15px 15px 35px 0px rgba(0, 0, 0, 0.1);
-	border-radius: 5px;
-	z-index: 100;
-}
-*/
+
 /*Кнопка для быстрого просмотра*/
 
 .specification {
@@ -687,12 +675,16 @@ input[type="search"] {
 	font-size: 16px;
 	line-height: 24px;
 	border-radius: 5px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	opacity: 0.5;
 }
 .subscription input[type="submit"] {
 	display: inline-block;
 	margin-top: 40px;
-	padding: 12px 20px;
+	margin-left: 10px;
+	padding: 12px 22px;
 	font-weight: 600;
+	font-size: 18px;
 	vertical-align: top;
 	color: #ffffff;
 	text-decoration: none;
@@ -992,38 +984,41 @@ input[type="search"] {
 	margin-bottom: 20px;
 }
 .form-btn {
-  display: inline-block;
-  padding: 14px 40px;
-  font-weight: 600;
-  vertical-align: top;
-  color: #ffffff;
-  text-decoration: none;
-  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-  background: #f26843;
-  background: -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
-  background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
-  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
-  border-radius: 100px;
-  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
-  box-sizing: border-box;
+	display: inline-block;
+	padding: 14px 30px;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 24px;
+	vertical-align: top;
+	color: #ffffff;
+	text-decoration: none;
+	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+	background: #f26843;
+background: -webkit-linear-gradient(#f26843 0%, #e74a35 100%);
+background: -o-linear-gradient(#f26843 0%, #e74a35 100%);
+background: linear-gradient(#f26843 0%, #e74a35 100%);
+	border-radius: 100px;
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+	box-sizing: border-box;
 }
 .form-btn:hover {
-  background: -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
-  background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
-  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
-  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+background: -webkit-linear-gradient(#f58669 0%, #ec6f5e 100%);
+background: -o-linear-gradient(#f58669 0%, #ec6f5e 100%);
+background: linear-gradient(#f58669 0%, #ec6f5e 100%);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .form-btn:active {
-  background: -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
-  background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
-  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
-  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+	background: -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
+	background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
+	background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 /*Style for footer*/
 
 .main-footer {
+	height: 108px;
 	margin-top: 45px;
 }
 .footer-social {
@@ -1073,7 +1068,7 @@ input[type="search"] {
 .footer-documentation {
 	float: left;
 	width: 335px;
-	margin-left: 200px;
+	margin-left: 180px;
 	font-weight: normal;
 }
 .footer-documentation a {
@@ -1084,6 +1079,9 @@ input[type="search"] {
 	line-height: 16px;
 	opacity: 0.7;
 	text-decoration: none;
+}
+.footer-documentation a:nth-child(3) {
+	margin-right: 12px;
 }
 .footer-documentation a:hover {
 	background: url("../img/heart.png") no-repeat;
