@@ -50,15 +50,20 @@
 		</div>
 		<div class="menu-right">
 			<form class="search" action="/search" method="get">
-				<input class="input" type="search" name="search" placeholder="Что ищем?"> 
-   				<input class="submit" type="submit" value="">
+				<div class="menu-search"><label for="search"><input type="search" name="search" id="search" placeholder="Что ищем?"></label> 
+   				<label><input type="submit" value=""></label>
    			</form>
+   				</div>
 			<a class="login" href="#">Вход</a>
-			<form action="/" method="get">
-				
+			<form class="login2" action="/" method="get">
+				<label for=""><input type="text" placeholder="Электронная почта"></label>
+				<label for=""><input type="password" placeholder="Пароль"></label>
+				<a class="get-btn" href="#">Войти</a>
+				<div class="form-exit">
+				<a class="pass" href="#">Забыли пароль?</a>
+				<a class="reg" href="#">Новая регистрация</a>
+				</div>
 			</form>
-
-
 
 			<a class="basket" href="#">Пусто</a>
 			<div class="time-work">С 10 до 20, ежедневно</div>

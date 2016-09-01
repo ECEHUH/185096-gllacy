@@ -345,10 +345,42 @@ a.new {
 	background-repeat: no-repeat;
 }
 .login2 {
-	
+	display: none;
+	position: relative;
+	top: 5px;
+	right: 150px;
+	width: 238px;
+	height: 174px;
+	margin: 0;
+	padding: 20px;
+	background: #f8f7f4;
+	box-shadow: 0 10px 12px 3px rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
 }
-.login:hover .login2 {
-
+.login2 .pass, .login2 .reg {
+	display: inline-block;
+	display: block;
+	margin-top: -3px;
+	font-size: 13px;
+	line-height: 24px;
+	font-weight: normal;
+	color: #000000;
+	vertical-align: super;
+}
+.form-exit {
+	position: absolute;
+	bottom: 25px;
+	right: 20px;
+}
+.login2 input {
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: normal;
+	opacity: 0.6;
+	padding: 9px 50px 9px 15px;
+	margin-bottom: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
 }
 
 .basket {
@@ -385,6 +417,7 @@ a.new {
 	text-align: right;
 }
 .search {
+	position: relative;
 	display: inline-block;
 	width: 32px;
 	height: 32px;
@@ -406,12 +439,28 @@ a.new {
 	background-position: 2px -84px;
 	border-radius: 50%;
 }
-
-input[type="search"] {
+.search .menu-search {
 	display: none;
-	
+	position: absolute;
+	top: 35;
+	right: 0;
+	display: none;
+	width: 310px;
+	height: 44px;
+	background: #f8f7f4;
+	box-shadow: 0 10px 12px 3px rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	border: none;
 }
 
+.search:hover .menu-search {
+	display: block;
+}
+
+.menu-search input[type="text"] {
+	display: none;
+	padding: 20px 15px;
+}
 .search input[type="submit"] {
 	display: none;
 }
