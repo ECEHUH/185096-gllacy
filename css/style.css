@@ -445,8 +445,8 @@ a.new {
 	top: 35;
 	right: 0;
 	display: none;
-	width: 310px;
-	height: 44px;
+	width: 340px;
+	height: 84px;
 	background: #f8f7f4;
 	box-shadow: 0 10px 12px 3px rgba(0, 0, 0, 0.5);
 	border-radius: 5px;
@@ -457,10 +457,17 @@ a.new {
 	display: block;
 }
 
-.menu-search input[type="text"] {
-	display: none;
-	padding: 20px 15px;
+.menu-search input[type="search"] {
+	padding: 12px 15px;
+	margin: 20px 15px;
+	width: 310px;
+	font-size: 14px;
+	font-weight: normal;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	opacity: 0.5;
+	border-radius: 5px;
 }
+
 .search input[type="submit"] {
 	display: none;
 }
