@@ -209,7 +209,7 @@ body > input[type="radio"] {
 .main-menu > li > a {
 	display: inline-block;
 	margin-right: 10px;
-	padding: 10px;
+	padding: 6px 13px;
 	color: white;
 	font-size: 16px
 	line-height: 18px;
@@ -218,7 +218,7 @@ body > input[type="radio"] {
 }
 
 .main-menu > li > a:hover {
-	padding: 10px;
+	padding: 6px 13px;
 	color: black;
 	font-weight: bold;
 	border-radius: 20px;
@@ -234,7 +234,7 @@ body > input[type="radio"] {
 }
 /*Catalog menu hover*/
 .main-menu .catalog-menu{
-	padding: 10px;
+	padding: 6px 13px;
 	background: #d07058; 
 	border-radius: 20px;
 	text-decoration: none;
@@ -344,6 +344,10 @@ a.new {
 	background-position: 16px 8px;
 	background-repeat: no-repeat;
 }
+
+.login:hover .login2 {
+	display: block;
+}
 .login2 {
 	display: none;
 	position: relative;
@@ -401,7 +405,7 @@ a.new {
 .basket-full {
 	display: inline-block;
 	width: 80px;
-	padding: 8px 26px 10px 22px;
+	padding: 8px 30px 10px 24px;
 	margin: 0;
 	text-decoration: none;
 	text-align: right;
@@ -416,6 +420,115 @@ a.new {
 .basket-full a {
 	text-align: right;
 }
+
+
+/*Стили для выпадающей формы с товаром*/
+.basket-full:hover + .basket-open{
+	display: block;
+	position: relative;
+	z-index: 150;
+}
+.basket-open {
+	display: none;
+	position: relative;
+	top: 0;
+	right: 280px;
+	width: 540px;
+	height: 240px;
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0 10px 12px 3px rgba(0, 0, 0, 0.5);
+	z-index: 160;
+	color: #000;
+}
+.container-basket {
+	display: inline-block;
+	margin: 0px 20px 5px 20px;
+	width: 500px;
+	font-size: 13px;
+	line-height: 16px;
+	font-weight: normal;
+}
+.container-basket:first-child {
+	margin-bottom: 0;
+}
+.cross {
+	position: relative;
+	top: -4px;
+	left: -8px;
+	width: 14px;
+	height: 1px;
+	margin: 0;
+	background: #000;
+	transform: rotate(45deg);
+	font-weight: bold;
+}
+.cross:before {
+	content: " ";
+	display: block;
+	width: 14px;
+	height: 1px;
+	background: #000;
+	transform: rotate(-90deg);
+	font-weight: bold;
+}
+.contant-ice {
+	word-wrap: break word;
+	width: 220px;
+	margin-right: 30px;
+	margin-left: 40px;
+}
+.icon-img:before {
+	content: "";
+	display: block;
+	position: relative;
+	top: 25px;
+	left: -45px;
+	width: 33px;
+	height: 33px;
+	background: url("../img/mini-ice-orange.png");
+}
+.icon-img1:before {
+	content: "";
+	display: block;
+	position: relative;
+	top: 25px;
+	left: -45px;
+	width: 33px;
+	height: 33px;
+	background: url("../img/mini-ice-straw.png");
+}
+.container-basket div {
+	display: inline-block;
+}
+.grey-price {
+	opacity: 0.4;
+	margin-right: 30px;
+}
+.bottom-line {
+	width: 520px;
+	margin: 15px 10px;
+	height: 1px;
+	background: #aebeb4;
+}
+.result {
+	float: right;
+	margin-right: 10px;
+	font-size: 15px;
+	line-height: 18px;
+}
+.order {
+	position: absolute;
+	bottom: 18px;
+	right: 10px;
+}
+
+
+
+
+
+
+
 .search {
 	position: relative;
 	display: inline-block;
@@ -779,38 +892,28 @@ a.new {
 }
 .breadcrumbs li{
 	display: inline-block;
-	margin-right: 20px;
+	margin: 0;
 	padding: 0;
 	min-height: 25px;
 	font-weight: normal;
-	font-size: 14px;
-	line-height: 16px;
-
 }
 .breadcrumbs a {
-	margin: 0;
-	padding: 0;
-	display: block;
-	text-decoration: none;
 	color: #ffffff;
 	font-size: 14px;
 	line-height: 16px;
-
+	text-decoration: none;
+	border-bottom:1px solid rgba(255, 255, 255, 0.4);
 }
-.breadcrumbs a::after {
-	display: block;
-	content: " ";
-	height: 1px;
-	padding-top: 0;
-	background: rgba(256, 256, 256, 0.3);
+.ars::after {
+	content: "\00bb";
+	font-size: 14px;
+	padding-left: 8px;
+	position: relative;
+	top: -1px;
+	left: -4px;
 }
-.ars a::after {
-	display: block;
-	content: " ";
-	width: 5px;
-	height: 5px;
-	background-image: url("../img/spr-arrows.png");
-	background-position: ;
+.breadcrumbs .ice-bottom {
+	border: none;
 }
 .main-ice-cream {
 	font-size: 35px;
@@ -827,43 +930,37 @@ a.new {
 	font-weight: normal;
 
 }
-.fillers legend {
-	margin-bottom: 5px;
-}
+
 .set-sorting {
 	display: inline-block;
+	margin: 0;
+	padding: 0;
 	border: none;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 16px;
 }
-.set-sorting select {
-	border-radius: 15px;
-	padding: 5px 8px;
-	background: #a1b4a9;
-	border: none;
-	color: #ffffff;
-}
-.set-sorting select:hover {
-	border-radius: 15px;
-	padding: 5px 8px;
-	background: #ffffff;
-	border: none;
-	color: #000000;
+.set-sorting legend {
+	margin-left: 15px;
+	margin-bottom: 10px;
 }
 .set-sorting input {
 	display: none;
 }
 .popularity {
-	display: inline-block;
-	background: #ffffff;
-}
-.set-sorting label {
+	display: block;
 	background: #a1b4a9;
-	padding: 6px 10px;
-	border-radius: 15px
+	padding: 7px 49px 7px 15px;
+	border-radius: 15px;
 }
-
+.popularity::after {
+	content: "";
+	display: block;
+	position: relative;
+	top: -9px;
+	left: 148px;
+	width: 9px;
+	height: 5px;
+	background-image: url("../img/marker.png");
+}
+/*Кнопка применить*/
 .apply {
 	padding: 4px 16px;
 	border: 2px solid #ffffff;
@@ -871,7 +968,6 @@ a.new {
 	color: #ffffff;
 	background: #a1b4a9;	
 }
-/*Кнопка применить*/
 .apply:hover {
 	padding: 4px 16px;
 	border: 2px solid #ffffff;
@@ -886,9 +982,7 @@ a.new {
 	color: #000000;
 	background: rgba(255, 255, 255, 0.9);
 	box-shadow:inset 0 1px 1px 0px rgba(0, 0, 0, 0.5);
-
 }
-
 /*Style for input range-controls*/
 .fillers .range-controls {
 	position: relative;
