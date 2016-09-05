@@ -959,13 +959,70 @@ a .login:hover .login2 {
 	height: 5px;
 	background-image: url("../img/marker.png");
 }
+/*radio*/
+
+.radio:not(checked) {
+	position: relative;
+	padding: 10px 0px 10px 49px;
+	margin-left: 0px;
+}
+.radio:not(checked):before {
+	content: "";
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	border: 1px solid #ffffff;
+	position: absolute;
+	left: 20px;
+	cursor: pointer;
+}
+.radio:nth-child(3):after {
+	content: "";
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	position: absolute;
+	background-color: #ffffff;
+	left: 24px;
+	top: 15px;
+}
+
+/*checkbox*/
+.checkbox:not(checked) {
+position: relative;
+padding: 0 0 14px 44px;
+}
+
+.checkbox:nth-child(4):before, .checkbox:nth-child(5):before, .checkbox:nth-child(6):before {
+content: "";
+width: 20px;
+height: 20px;
+position: absolute;
+background-image: url("../img/checkbox.png");
+left: 15px;
+cursor: pointer;
+}
+.checkbox:nth-child(2):after, .checkbox:nth-child(3):after {
+content: "";
+font-weight: normal;
+color: #fff;
+position: absolute;
+background-image: url("../img/checkbox-icon.png");
+left: 15px;
+width: 20px;
+height: 20px;
+cursor: pointer;
+}
+
+
 /*Кнопка применить*/
 .apply {
 	padding: 4px 16px;
 	border: 2px solid #ffffff;
 	border-radius: 15px;
 	color: #ffffff;
-	background: #a1b4a9;	
+	background: #a1b4a9;
+	margin-left: 35px;
 }
 .apply:hover {
 	padding: 4px 16px;
