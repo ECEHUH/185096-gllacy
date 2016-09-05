@@ -403,6 +403,7 @@ a .login:hover .login2 {
 	border-radius: 20px;
 }
 .basket-full {
+	position: relative;
 	display: inline-block;
 	width: 80px;
 	padding: 8px 30px 10px 24px;
@@ -423,16 +424,15 @@ a .login:hover .login2 {
 
 
 /*Стили для выпадающей формы с товаром*/
-.basket-full:hover + .basket-open{
+.basket-full:hover .basket-open {
 	display: block;
-	position: relative;
 	z-index: 150;
 }
 .basket-open {
 	display: none;
-	position: relative;
-	top: 0;
-	right: 280px;
+	position: absolute;
+	top: 57px;
+	right:105px;
 	width: 540px;
 	height: 240px;
 	background: #fff;
@@ -697,7 +697,22 @@ a .login:hover .login2 {
 	bottom: 116px;
 	left: 10px;
 	font-size: 45px;
-	line-height: 50px
+	padding-left: 10px;
+	line-height: 50px;
+	
+}
+.rubl {
+	position: absolute;
+	background-image: url("../img/rub.png");
+	background-repeat: no-repeat;
+	background-position: 3px 8px;
+	font-size: 45px;
+	width: 32px;
+	height: 43px;
+}
+.kilo {
+	font-size: 30px;
+	margin-left: 38px;
 }
 .hit::before {
 	content: "";
