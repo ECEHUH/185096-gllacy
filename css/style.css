@@ -384,7 +384,7 @@ a.new {
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	border-radius: 5px;
 }
-a .login:hover .login2 {
+.login:hover .login2 {
 	display: block;
 }
 .basket {
@@ -684,6 +684,7 @@ a .login:hover .login2 {
 	line-height: 22px;
 	font-family: "Roboto Medium", "Arial", sans-serif;
 	text-align: center;
+
 }
 .ice-cream a {
 	color: #ffffff;
@@ -691,6 +692,7 @@ a .login:hover .login2 {
 .ice-cream img {
 	margin: 5px auto;
 	margin-bottom: 10px;
+
 }
 .ice-cream .price {
 	position: absolute;
@@ -732,8 +734,8 @@ a .login:hover .login2 {
 	left: 0px; 
 	width: 265px; 
 	height: 400px; 
-	z-index: 100; 
-	padding: 8px 10px; 
+	z-index: 200; 
+	padding: 8px 10px;
 	background-color: rgba(255, 255, 255, 0.3); 
 	background-repeat: no-repeat; 
 	background-position: center 9px; 
@@ -954,6 +956,9 @@ a .login:hover .login2 {
 	background: #a1b4a9;
 	border-radius: 25px;
 }
+.set-sorting:nth-child(1) {
+	padding: 0;
+}
 .set-sorting:nth-child(2) {
 	top: 13px;
     margin: 0;
@@ -1024,6 +1029,7 @@ a .login:hover .login2 {
 	border: 1px solid #ffffff;
 	position: absolute;
 	left: 15px;
+	border-radius: 3px;
 }
 .checkbox:nth-child(2)::after, .checkbox:nth-child(4)::after {
 	content: "\2713";
@@ -1126,8 +1132,8 @@ a .login:hover .login2 {
 	border-radius: 50%;
 	background-color: rgba(255, 255, 255, 0.3);
 	padding: 1px 6px;
-
 }
+
 .buttons a:active {	
 	border-radius: 50%;
 	color: black;
