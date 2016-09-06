@@ -317,7 +317,6 @@ a.new {
 }
 
 .login {
-	position: relative;
 	display: inline-block;
 	width: 60px;
 	padding: 8px 15px 10px 15px;
@@ -344,13 +343,19 @@ a.new {
 	background-position: 16px 8px;
 	background-repeat: no-repeat;
 }
-
-
+.wrapper-login {
+	display: inline-block;
+	position: relative;
+    top: -22px;
+}
+.wrapper-login:hover .login2{
+	display: block;
+}
 .login2 {
 	display: none;
 	position: absolute;
-	top: 65px;
-	right: 250px;
+	top: 40px;
+	right: 0px;
 	width: 238px;
 	height: 174px;
 	margin: 0;
@@ -358,6 +363,7 @@ a.new {
 	background: #f8f7f4;
 	box-shadow: 0 10px 12px 3px rgba(0, 0, 0, 0.5);
 	border-radius: 5px;
+	z-index: 110;
 }
 .login2 .pass, .login2 .reg {
 	display: inline-block;
@@ -387,6 +393,7 @@ a.new {
 .login:hover .login2 {
 	display: block;
 }
+
 .basket {
 	display: inline-block;
 	width: 80px;
@@ -402,15 +409,21 @@ a.new {
 	background-repeat: no-repeat;
 	border-radius: 20px;
 }
+.wrapper-basket {
+	padding: 0;
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    top: -14px;
+}
+
 .basket-full {
-	position: relative;
 	display: inline-block;
 	width: 80px;
 	padding: 8px 30px 10px 24px;
 	margin: 0;
 	text-decoration: none;
 	text-align: right;
-	vertical-align: top;
 	color: black;
 	background: #ffffff;
 	background-image: url("../img/basket-full.png");
@@ -421,18 +434,16 @@ a.new {
 .basket-full a {
 	text-align: right;
 }
-
+.wrapper-basket:hover .basket-open{
+	display: block;
+}
 
 /*Стили для выпадающей формы с товаром*/
-.basket-full:hover .basket-open {
-	display: block;
-	z-index: 150;
-}
 .basket-open {
 	display: none;
 	position: absolute;
-	top: 57px;
-	right:105px;
+	top: 40px;
+	right: -2px;
 	width: 540px;
 	height: 240px;
 	background: #fff;
@@ -524,11 +535,6 @@ a.new {
 }
 
 
-
-
-
-
-
 .search {
 	position: relative;
 	display: inline-block;
@@ -555,7 +561,7 @@ a.new {
 .search .menu-search {
 	display: none;
 	position: absolute;
-	top: 35px;
+	top: 39px;
 	right: 0;
 	display: none;
 	width: 340px;
@@ -958,6 +964,7 @@ a.new {
 }
 .set-sorting:nth-child(1) {
 	padding: 0;
+	padding-bottom: 1px;
 }
 .set-sorting:nth-child(2) {
 	top: 13px;
@@ -965,10 +972,6 @@ a.new {
     padding: 0px;
     padding-bottom: 6px;
 }
-.set-sorting:nth-child(1){
-	background: none;
-}
-
 .set-sorting legend {
 	position: absolute;
 	top: -24px;
@@ -997,51 +1000,66 @@ a.new {
 .set-sorting:nth-child(3) {
 	width: 412px;
 }
-
 /*radio*/
-.radio:not(checked){
-	position: relative;
-	padding: 10px 0px 10px 45px;
-	margin-left: 0px;
+.radio:not(checked) + label {
+    position: relative;
+    padding: 0 0 10px 44px;
 }
-.radio:not(checked)::before {
-	content: "";
-	width: 16px;
-	height: 16px;
-	border-radius: 50%;
-	border: 1px solid #ffffff;
-	position: absolute;
-	left: 20px;
+.radio:not(checked) + label:before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    opacity: 0.6;
+    position: absolute;
+    left: 18px;
 }
-.radio:not(checked)::after {
-
+.radio:checked + label:after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    position: absolute;
+    background-color: #ffffff;
+    left: 24px;
+    top: 7px;
+}
+.radio + label:hover::before {
+	opacity: 1;
 }
 /*checkbox*/
-.checkbox:not(checked) {
-	position: relative;
-	padding: 0 0 14px 44px;
+.checkbox:not(checked) + label {
+    position: relative;
+    padding: 0 0 14px 44px;
 }
-
-.checkbox:not(checked)::before {
-	content: "";
-	width: 16px;
-	height: 16px;
-	border: 1px solid #ffffff;
-	position: absolute;
-	left: 15px;
-	border-radius: 3px;
+.checkbox:not(checked) + label:nth-child(6) {
+    padding-bottom: 45px;
 }
-.checkbox:nth-child(2)::after, .checkbox:nth-child(4)::after {
-	content: "\2713";
-    font-weight: bold;
+.checkbox:not(checked) + label:before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ffffff;
+    opacity: 0.6;
+    position: absolute;
+    left: 15px;
+    border-radius: 3px;
+}
+.checkbox:checked + label:after {
+    content: "\2713";
+    text-transform: none;
+    font-weight: normal;
+    font-size: 15px;
     color: #ffffff;
     position: absolute;
-    left: 19px;
-    top: 1px;
-    font-size: 12px;
+    left: 20px;
+    top: 2px;
 }
-
-
+.checkbox + label:hover::before {
+	opacity: 1;
+}
 /*Кнопка применить*/
 .apply {
 	padding: 7px 16px;
@@ -1216,11 +1234,10 @@ a.new {
 .content4 {
 	margin-bottom: 5px;
 }
-.content5 {
-	margin-bottom: 20px;
-}
+
 .form-btn {
 	display: inline-block;
+	margin-top: 20px;
 	padding: 14px 30px;
 	font-weight: 600;
 	font-size: 18px;

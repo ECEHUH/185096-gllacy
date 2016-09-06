@@ -32,8 +32,9 @@
 				<div class="menu-search"><label for="search"><input type="search" name="search" id="search" placeholder="Что ищем?"></label> 
    				<label><input type="submit" value=""></label>
    			</form>
-   				</div> 
-			<a class="login" href="#">Вход
+   				</div>
+   			<div class="wrapper-login"> 
+			<a class="login" href="#">Вход</a>
 			<form class="login2" action="/" method="get">
 				<label for=""><input type="text" placeholder="Электронная почта"></label>
 				<label for=""><input type="password" placeholder="Пароль"></label>
@@ -43,8 +44,9 @@
 				<a class="reg" href="#">Новая регистрация</a>
 				</div>
 			</form>
-			</a>
-			<a class="basket-full" href="#">2 товара
+			</div>
+			<div class="wrapper-basket">
+			<a class="basket-full" href="#">2 товара</a>
 				<div class="basket-open">
 					<div class="container-basket">
 						<div class="cross"></div>
@@ -64,7 +66,7 @@
 					<div class="result">Итого: 750 руб.</div>
 					<a href="#" class="get-btn order">Оформить заказ</a>
 				</div>
-			</a>
+			</div>
 			<div class="time-work">С 10 до 20, ежедневно</div>
 			<div class="num-phone">8 812 450-25-25</div>
 		</div>
@@ -102,27 +104,27 @@
 		</fieldset>
 		<fieldset class="set-sorting">
 			<legend>Жирность:</legend>
-				<label class="radio" for="zero">0%</label>
-				<input id="zero" type="radio" name="zero">
-				<label class="radio" for="second">до 10%</label>
-				<input id="second" type="radio" name="second" checked>
-				<label class="radio" for="third">до 30%</label>
-				<input id="third" type="radio" name="third">
-				<label class="radio" for="fourth">выше 30%</label>
-				<input type="fourth" name="fourth">
+				<input id="zero" type="radio" name="zero" class="radio">
+				<label for="zero">0%</label>
+				<input id="second" type="radio" name="second" class="radio" checked>
+				<label for="second">до 10%</label>
+				<input id="third" type="radio" class="radio" name="third">
+				<label for="third">до 30%</label>
+				<input type="fourth" name="fourth" class="radio" >
+				<label for="fourth">выше 30%</label>
 		</fieldset>
 		<fieldset class="set-sorting">
 			<legend>Наполнители:</legend>
-				<label class="checkbox" for="choko">шоколадные</label>
-				<input id="choko" type="checkbox" name="choko" checked>
-				<label class="checkbox" for="sugar">сахарные присыпки</label>
-				<input id="sugar" type="checkbox" name="sugar" checked>
-				<label class="checkbox" for="fruit">фрукты</label>
-				<input id="fruit" type="checkbox" name="fruit">
-				<label class="checkbox" for="syrup">сиропы</label>
-				<input id="syrup" type="checkbox" name="syrup">
-				<label class="checkbox" for="jam">джемы</label>
-				<input id="jam" type="checkbox" name="jam">
+				<input id="choko" type="checkbox" name="choko" class="checkbox" checked>
+				<label for="choko">шоколадные</label>
+				<input id="sugar" type="checkbox" name="sugar" class="checkbox" checked>
+				<label for="sugar">сахарные присыпки</label>
+				<input id="fruit" type="checkbox" name="fruit" class="checkbox">
+				<label for="fruit">фрукты</label>
+				<input id="syrup" type="checkbox" name="syrup" class="checkbox">
+				<label for="syrup">сиропы</label>
+				<input id="jam" type="checkbox" name="jam" class="checkbox">
+				<label for="jam">джемы</label>
 		</fieldset>
 		<button class="apply" type="submit">Применить</button>
 		</form>
