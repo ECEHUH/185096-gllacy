@@ -32,7 +32,7 @@
 				<div class="menu-search"><label for="search"><input type="search" name="search" id="search" placeholder="Что ищем?"></label> 
    				<label><input type="submit" value=""></label>
    			</form>
-   				</div>
+   				</div> 
 			<a class="login" href="#">Вход</a>
 			<form class="login2" action="/" method="get">
 				<label for=""><input type="text" placeholder="Электронная почта"></label>
@@ -45,23 +45,23 @@
 			</form>
 			<a class="basket-full" href="#">2 товара
 				<div class="basket-open">
-				<div class="container-basket">
-					<div class="cross"></div>
-					<div class="contant-ice icon-img">Пломбир с апельсиновым джемом</div>
-					<div>1,5 кг x</div>
-					<div class="grey-price">200 руб.</div>
-					<div>300 руб.</div>
-				</div>
-				<div class="container-basket">
-					<div class="cross"></div>
-					<div class="contant-ice icon-img1">Клубничный пломбир с присыпкой из белого шоколада</div>
-					<div>1,5 кг x</div>
-					<div class="grey-price">300 руб.</div>
-					<div>450 руб.</div>
-				</div>
-				<div class="bottom-line"></div>
-				<div class="result">Итого: 750 руб.</div>
-				<a href="#" class="get-btn order">Оформить заказ</a>
+					<div class="container-basket">
+						<div class="cross"></div>
+						<div class="contant-ice icon-img">Пломбир с апельсиновым джемом</div>
+						<div>1,5 кг x</div>
+						<div class="grey-price">200 руб.</div>
+						<div>300 руб.</div>
+					</div>
+					<div class="container-basket">
+						<div class="cross"></div>
+						<div class="contant-ice icon-img1">Клубничный пломбир с присыпкой из белого шоколада</div>
+						<div>1,5 кг x</div>
+						<div class="grey-price">300 руб.</div>
+						<div>450 руб.</div>
+					</div>
+					<div class="bottom-line"></div>
+					<div class="result">Итого: 750 руб.</div>
+					<a href="#" class="get-btn order">Оформить заказ</a>
 				</div>
 			</a>
 			<div class="time-work">С 10 до 20, ежедневно</div>
@@ -88,13 +88,13 @@
 		<form class="fillers">
 		<fieldset class="set-sorting">
 			<legend>Сортировка:</legend>
-				<label class="popularity" for="">
-					<input type="text" value="по популярности">по популярности
-				</label>
+				<select>
+					<option value="по популярности">по популярности</option> 
+				</select> 
 		</fieldset>
 		<fieldset class="set-sorting"><legend>Цена: 100 руб. - 500 руб.</legend>
 			<div class="range-controls">
-			<div class="scale"><div style="margin-left:20px; margin-right: 20px; width: 110px" class="bar"></div></div>
+			<div class="scale"><div style="margin-left:30px; margin-right: 20px; width: 110px" class="bar"></div></div>
 			<div class="toggle min-toggle"></div>
 			<div class="toggle max-toggle"></div>
 			</div>
@@ -111,17 +111,17 @@
 				<input type="fourth" name="fourth">
 		</fieldset>
 		<fieldset class="set-sorting">
-			<legend>Наполнители:</legend></label>
+			<legend>Наполнители:</legend>
 				<label class="checkbox" for="choko">шоколадные</label>
-				<input type="checkbox" name="choko" checked>
+				<input id="choko" type="checkbox" name="choko" checked>
 				<label class="checkbox" for="sugar">сахарные присыпки</label>
-				<input type="checkbox" name="sugar" checked>
-				<label class="checkbox"  for="fruit">фрукты</label>
-				<input type="checkbox" name="fruit">
-				<label class="checkbox"  for="syrup">сиропы</label>
-				<input type="checkbox" name="syrup">
+				<input id="sugar" type="checkbox" name="sugar" checked>
+				<label class="checkbox" for="fruit">фрукты</label>
+				<input id="fruit" type="checkbox" name="fruit">
+				<label class="checkbox" for="syrup">сиропы</label>
+				<input id="syrup" type="checkbox" name="syrup">
 				<label class="checkbox" for="jam">джемы</label>
-				<input type="checkbox" name="jam">
+				<input id="jam" type="checkbox" name="jam">
 		</fieldset>
 		<button class="apply" type="submit">Применить</button>
 		</form>
@@ -145,7 +145,7 @@
 		</article>
 		<article class="ice-cream">
 			<img src="img/ice-strawberry.png" width="267" height="267" alt="Апельсиновое">
-			<span class="price">355 <span class="rubl"><span class="kilo">/кг</span></span></span>
+			<span class="price">355<span class="rubl"><span class="kilo">/кг</span></span></span>
 			<a class="specification" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
 			<div class="display-btn">
 				<a class="quick-view get-btn" href="">Быстрый просмотр</a>

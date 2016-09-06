@@ -702,7 +702,6 @@ a .login:hover .login2 {
 	
 }
 .rubl {
-	position: absolute;
 	background-image: url("../img/rub.png");
 	background-repeat: no-repeat;
 	background-position: 3px 8px;
@@ -939,49 +938,68 @@ a .login:hover .login2 {
 .fillers {
 	width: 900px;
 	height: 130px;
-	margin-bottom: 38px;
+	margin-bottom: 35px;
 	padding: 0;
 	font-weight: normal;
 
 }
 
 .set-sorting {
+	position: relative;
 	display: inline-block;
 	margin: 0;
-	padding: 0;
+	padding: 9px 0px 9px 0px;
 	border: none;
+	margin-bottom: 30px;
+	background: #a1b4a9;
+	border-radius: 25px;
 }
+.set-sorting:nth-child(2) {
+	top: 13px;
+    margin: 0;
+    padding: 0px;
+    padding-bottom: 6px;
+}
+.set-sorting:nth-child(1){
+	background: none;
+}
+
 .set-sorting legend {
-	margin-left: 15px;
-	margin-bottom: 10px;
+	position: absolute;
+	top: -24px;
+	left: 15px;
+	font-size: 14px;
+	line-height: 16px;
 }
 .set-sorting input {
 	display: none;
 }
-.popularity {
-	display: block;
-	background: #a1b4a9;
-	padding: 7px 49px 7px 15px;
-	border-radius: 15px;
+.set-sorting select {
+	width: 192px;
+    border: none;
+    border-radius: 25px;
+    background: #a1b4a9;
+    color: #ffffff;
+    padding: 7px 10px 7px 15px;
 }
-.popularity::after {
-	content: "";
-	display: block;
-	position: relative;
-	top: -9px;
-	left: 148px;
-	width: 9px;
-	height: 5px;
-	background-image: url("../img/marker.png");
+.set-sorting select:hover {
+	background: #ffffff;
+	color: #000000;
 }
-/*radio*/
+.set-sorting:nth-child(4) {
+	width: 700px;
+}
+.set-sorting:nth-child(3) {
+	width: 412px;
+}
 
-.radio:not(checked) {
+/*radio*/
+.radio:not(checked){
 	position: relative;
-	padding: 10px 0px 10px 49px;
+	padding: 10px 0px 10px 45px;
 	margin-left: 0px;
 }
-.radio:not(checked):before {
+.radio:not(checked)::before {
 	content: "";
 	width: 16px;
 	height: 16px;
@@ -989,65 +1007,53 @@ a .login:hover .login2 {
 	border: 1px solid #ffffff;
 	position: absolute;
 	left: 20px;
-	cursor: pointer;
 }
-.radio:nth-child(3):after {
-	content: "";
-	width: 10px;
-	height: 10px;
-	border-radius: 50%;
-	position: absolute;
-	background-color: #ffffff;
-	left: 24px;
-	top: 15px;
-}
+.radio:not(checked)::after {
 
+}
 /*checkbox*/
 .checkbox:not(checked) {
-position: relative;
-padding: 0 0 14px 44px;
+	position: relative;
+	padding: 0 0 14px 44px;
 }
 
-.checkbox:nth-child(4):before, .checkbox:nth-child(5):before, .checkbox:nth-child(6):before {
-content: "";
-width: 20px;
-height: 20px;
-position: absolute;
-background-image: url("../img/checkbox.png");
-left: 15px;
-cursor: pointer;
+.checkbox:not(checked)::before {
+	content: "";
+	width: 16px;
+	height: 16px;
+	border: 1px solid #ffffff;
+	position: absolute;
+	left: 15px;
 }
-.checkbox:nth-child(2):after, .checkbox:nth-child(3):after {
-content: "";
-font-weight: normal;
-color: #fff;
-position: absolute;
-background-image: url("../img/checkbox-icon.png");
-left: 15px;
-width: 20px;
-height: 20px;
-cursor: pointer;
+.checkbox:nth-child(2)::after, .checkbox:nth-child(4)::after {
+	content: "\2713";
+    font-weight: bold;
+    color: #ffffff;
+    position: absolute;
+    left: 19px;
+    top: 1px;
+    font-size: 12px;
 }
 
 
 /*Кнопка применить*/
 .apply {
-	padding: 4px 16px;
+	padding: 7px 16px;
 	border: 2px solid #ffffff;
 	border-radius: 15px;
 	color: #ffffff;
 	background: #a1b4a9;
-	margin-left: 35px;
+	margin-left: 8px;
 }
 .apply:hover {
-	padding: 4px 16px;
+	padding: 7px 16px;
 	border: 2px solid #ffffff;
 	border-radius: 15px;
 	color: #000000;
 	background: #ffffff;	
 }
 .apply:active {
-	padding: 4px 16px;
+	padding: 7px 16px;
 	border: 2px solid #ffffff;
 	border-radius: 15px;
 	color: #000000;
@@ -1057,14 +1063,15 @@ cursor: pointer;
 /*Style for input range-controls*/
 .fillers .range-controls {
 	position: relative;
-	height: 20px;
-	padding: 5px 10px;
-	background: #a1b4a9;
-	border-radius: 15px;
+    top: 6px;
+    height: 20px;
+    margin-right: 0px;
+    padding: 5px 9px;
+    width: 198px;
 	
 }
 .fillers .scale {
-	margin-top: 8px;
+	margin-top: 6px;
 	height:2px;
 	background:#d7dcde;
 }
@@ -1074,20 +1081,20 @@ cursor: pointer;
 }
 .fillers .toggle {
     position:absolute;
-    top: 6px;
+    top: 2px;
     left: 35px;
-    width: 2px;
-    height: 2px;
-    border: 8px solid white;
+    width: 14px;
+    height: 14px;
+    border: 3px solid white;
     background: #ffffff;
     cursor: pointer;
     border-radius: 50%;
 }
 .fillers .min-toggle {
-    left: 30px;
+    left: 38px;
 }
 .fillers .max-toggle {
-    left: 120px;
+    left: 130px;
 }
 
 
@@ -1142,6 +1149,7 @@ cursor: pointer;
 	height: 14px;
 	margin-right: 8px;
 }
+
 .btn .next {
 	background-image: url("../img/sprites-arrows.png");
 	background-position: -205px -154px;
