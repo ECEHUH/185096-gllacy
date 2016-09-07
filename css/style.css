@@ -28,12 +28,13 @@ body > input[type="radio"] {
 }
 
 .site-wrapper {
-  margin: 0 auto;
-  padding: 0;
-  box-sizing: border-box;
-  background-repeat: no-repeat;
-  background-position: top center;
-  transition: background-image 0.5s ease, background-color 0.5s ease;
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-position: top center;
+	transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 .site-wrapper:before,
 .site-wrapper:after {
@@ -58,12 +59,10 @@ body > input[type="radio"] {
 
 .slider {
   position: relative;
-
   padding-top: 270px;
-
   text-align: center;
   color: #ffffff;
-  margin-bottom: 40px;
+  margin-bottom: 56px;
 }
 
 .slide {
@@ -180,7 +179,8 @@ body > input[type="radio"] {
 /*Style for header*/
 
 .main-header {
-	margin-bottom: 30px;
+	margin: 0px;
+	padding: 0px;
 }
 .mini-logo {
 	float: left;
@@ -189,20 +189,17 @@ body > input[type="radio"] {
 }
 .menu-left {
 	float: left;
-	margin-top: 25px;
 	padding: 0px;
-	min-height: 76px;
-	width: 700px;
+	margin: 28px 0px;
 }
 .main-menu {
 	list-style: none;
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
 }
 .main-menu > li {
 	position: relative;
 	display: inline-block;
-	min-height: 76px;
 	white-space: nowrap;
 }
 
@@ -308,7 +305,6 @@ a.new {
 /*Style for menu right*/
 .menu-right {
 	float: right;
-	min-height: 76px;
 	width: 265px;
 	padding-top: 20px;
 	font-size: 14px;
@@ -340,7 +336,7 @@ a.new {
 	color: black;
 	background: #ffffff;
 	background-image: url("../img/exit-black.png");
-	background-position: 16px 8px;
+	background-position: 15px 7px;
 	background-repeat: no-repeat;
 }
 .wrapper-login {
@@ -420,14 +416,14 @@ a.new {
 .basket-full {
 	display: inline-block;
 	width: 80px;
-	padding: 8px 30px 10px 24px;
+	padding: 8px 22px 10px 32px;
 	margin: 0;
 	text-decoration: none;
 	text-align: right;
 	color: black;
 	background: #ffffff;
 	background-image: url("../img/basket-full.png");
-	background-position: 14px 7px;
+	background-position: 18px 7px;
 	background-repeat: no-repeat;
 	border-radius: 20px;
 }
@@ -455,7 +451,6 @@ a.new {
 .container-basket {
 	display: inline-block;
 	margin: 0px 20px 5px 20px;
-	width: 500px;
 	font-size: 13px;
 	line-height: 16px;
 	font-weight: normal;
@@ -519,7 +514,7 @@ a.new {
 }
 .bottom-line {
 	width: 520px;
-	margin: 15px 10px;
+	margin: 8px 10px;
 	height: 1px;
 	background: #aebeb4;
 }
@@ -528,10 +523,11 @@ a.new {
 	margin-right: 10px;
 	font-size: 15px;
 	line-height: 18px;
+	padding: 10px 0px 78px 10px;
 }
 .order {
 	position: absolute;
-	bottom: 18px;
+	bottom: 22px;
 	right: 10px;
 }
 
@@ -545,7 +541,7 @@ a.new {
 	background: #a1b4a9;
 	background-image: url("../img/spritesheet.png");
 	background-repeat: no-repeat;
-	background-position: 2px -56px;
+	background-position: 3px -56px;
 	border-radius: 50%;
 }
 .search:hover{
@@ -556,7 +552,7 @@ a.new {
 	background: #ffffff;
 	background-image: url("../img/spritesheet.png");
 	background-repeat: no-repeat;
-	background-position: 2px -84px;
+	background-position: 3px -83px;
 	border-radius: 50%;
 }
 .search .menu-search {
@@ -592,14 +588,14 @@ a.new {
 }
 
 .main-header .num-phone {
+	margin: 0px;
 	margin-top: 5px;
+	padding: 0px;
 	font-size: 22px;
 	line-height: 24px;
 	font-weight: bold;
 }
-.main-header .time-work {
-	margin-top: 20px;
-}
+
 .main-header .num-phone, .main-header .time-work {
 	float: right;
 }
@@ -628,11 +624,16 @@ a.new {
 	background: url("../img/chocolate.png") no-repeat;
 }
 .info-content {
-	padding: 10px 20px 5px 20px;
+	margin: 0;
+	padding: 20px 0px 20px 20px;
+	font-size: 35px;
+	line-height: 41px;
 }
 .promo p {
-	padding: 0 30px 0 20px;
-
+	margin: 0;
+	padding: 0 10px 0 20px;
+	font-size: 18px;
+    line-height: 22px;
 }
 .get-btn {
   display: inline-block;
@@ -666,7 +667,10 @@ a.new {
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 .main-body {
+	margin: 0px;
 	margin-bottom: 30px;
+	margin-top: -20px;
+	padding: 0px;
 }
 .promo a{
 	margin-right: 20px;
@@ -677,9 +681,8 @@ a.new {
 .range {
 	display: block;
 	width: 100%;
-	padding: 0;
-	margin-bottom: 35px;
-
+	margin: 0px;
+	padding: 0px;
 }
 .ice-cream {
 	position: relative;
@@ -947,7 +950,7 @@ a.new {
 .fillers {
 	width: 900px;
 	height: 130px;
-	margin-bottom: 35px;
+	margin-bottom: 15px;
 	padding: 0;
 	font-weight: normal;
 
@@ -963,20 +966,30 @@ a.new {
 	background: #a1b4a9;
 	border-radius: 25px;
 }
+.set-sorting label{
+	display: inline-block;
+}
 .set-sorting:nth-child(1) {
-	padding: 0;
-	padding-bottom: 1px;
+	padding: 0px;
 }
 .set-sorting:nth-child(2) {
-	top: 13px;
+	top: 14px;
+	left: 8px;
     margin: 0;
     padding: 0px;
     padding-bottom: 6px;
 }
+.set-sorting:nth-child(4) {
+	padding: 7px 22px 0px 0px;
+}
+.set-sorting:nth-child(3) {
+	margin-left: 15px;
+	padding: 8px 20px 0px 0px;
+}
 .set-sorting legend {
 	position: absolute;
 	top: -24px;
-	left: 15px;
+	left: 20px;
 	font-size: 14px;
 	line-height: 16px;
 }
@@ -990,9 +1003,9 @@ a.new {
 	background: #a1b4a9;
 	background-image: url("../img/marker-white.png");
 	background-repeat: no-repeat;
-	background-position: 164px 17px;
+	background-position: 164px 15px;
 	color: #ffffff;
-	padding: 7px 10px 7px 15px;
+	padding: 8px 0px 10px 20px;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
@@ -1001,15 +1014,11 @@ a.new {
 	background: #ffffff;
 	background-image: url("../img/marker-black.png");
 	background-repeat: no-repeat;
-	background-position: 164px 17px;
+	background-position: 164px 15px;
 	color: #000000;
+	padding: 8px 0px 10px 20px;
 }
-.set-sorting:nth-child(4) {
-	width: 700px;
-}
-.set-sorting:nth-child(3) {
-	width: 412px;
-}
+
 /*radio*/
 .radio:not(checked) + label {
     position: relative;
@@ -1047,7 +1056,7 @@ a.new {
 /*checkbox*/
 .checkbox:not(checked) + label {
 	position: relative;
-	padding: 0 0 14px 44px;
+	padding: 0 0 11px 50px;
 }
 .checkbox:not(checked) + label:nth-child(6) {
 	padding-bottom: 45px;
@@ -1210,24 +1219,21 @@ a.new {
 .coordinates {
 	position: relative;
 }
-.address a {
-	
-}
+
 .map {
 	width: 1200px;
 	height: 430px;
 	z-index: 2;
 	border: none;
-	margin: 0 -20px;
 }
 
 .address {
 	position: absolute;
 	top: 62px;
-	right: 25px;
+	right: 27px;
 	width: 300px;
 	height: 305px;
-	padding: 30px 20px 20px 20px;
+	padding: 26px 20px 20px 23px;
 	border-radius: 15px;
 	z-index: 30;
 	color: black;
@@ -1297,8 +1303,8 @@ background: linear-gradient(#f58669 0%, #ec6f5e 100%);
 /*Style for footer*/
 
 .main-footer {
-	height: 108px;
-	margin-top: 45px;
+	margin: 0px 20px;
+	padding: 32px 0px;
 }
 .footer-social {
 	float: left;
