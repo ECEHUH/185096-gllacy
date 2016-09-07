@@ -72,20 +72,20 @@ body > input[type="radio"] {
 
 .slide-title {
 	width: 700px;
-	margin: 3px 220px;
+	margin: 0px 220px;
 	margin-bottom: 10px;
-	font-weight: 800;
+	font-weight: 600;
 	font-size: 60px;
 	line-height: 61px;
 }
 
 .slide-btn {
 	display: inline-block;
-	margin-top: 20px;
-	padding: 9px 41px;
+	margin-top: 18px;
+	padding: 9px 37px 11px 39px;
 	font-weight: 600;
-	font-size: 31px;
-	line-height: 41px;
+	font-size: 32px;
+	line-height: 44px;
 	vertical-align: top;
 	color: #ffffff;
 	text-decoration: none;
@@ -124,7 +124,7 @@ body > input[type="radio"] {
 	display: inline-block;
 	width: 17px;
 	height: 17px;
-	margin-right: 7px;
+	margin-right: 8px;
 	vertical-align: top;
 	background-color: transparent;
 	border: 2px solid #ffffff;
@@ -181,13 +181,13 @@ body > input[type="radio"] {
 }
 .mini-logo {
 	float: left;
-	padding: 13px 0px 0px 2px;
-	margin: 0px 0px 0px -9px;
+	padding: 0px;
+	margin: 10px 0px 0px -5px;
 }
 .menu-left {
 	float: left;
 	padding: 0px;
-	margin: 28px 0px;
+	margin: 24px -2px;
 }
 .main-menu {
 	list-style: none;
@@ -307,11 +307,10 @@ body > input[type="radio"] {
 
 .login {
 	position: absolute;
-	left: 19px;
-	top: -3px;
+	left: 15px;
+	top: -6px;
 	display: inline-block;
-	width: 60px;
-	padding: 8px 17px 8px 44px;
+	padding: 8px 16px 8px 44px;
 	text-decoration: none;
 	text-align: right;
 	vertical-align: top;
@@ -387,10 +386,9 @@ body > input[type="radio"] {
 .basket {
 	position: absolute;
 	right: 101px;
-	top: 26px;
+	top: 23px;
 	display: inline-block;
-	width: 80px;
-	padding: 8px 34px 7px 44px;
+	padding: 8px 34px 8px 44px;
 	margin: 0;
 	text-decoration: none;
 	text-align: right;
@@ -398,7 +396,7 @@ body > input[type="radio"] {
 	color: white;
 	background: #a1b4a9;
 	background-image: url("../img/spritesheet.png");
-	background-position: 12px 1px;
+	background-position: 11px 1px;
 	background-repeat: no-repeat;
 	border-radius: 20px;
 }
@@ -530,8 +528,8 @@ body > input[type="radio"] {
 
 .search {
 	position: relative;
-	top: 5px;
-	left: 12px;
+	top: 3px;
+	left: 8px;
 	display: inline-block;
 	width: 32px;
 	height: 32px;
@@ -587,7 +585,7 @@ body > input[type="radio"] {
 }
 
 .main-header .num-phone {
-	margin: 5px -4px 0px 0px;
+	margin: 4px -5px 0px 0px;
 	padding: 0px;
 	font-size: 22px;
 	line-height: 24px;
@@ -598,8 +596,8 @@ body > input[type="radio"] {
 	float: right;
 }
 .time-work {
-	margin-top: 56px;
-	margin-right: -2px;
+	margin-top: 53px;
+	margin-right: -3px;
 }
 /*Style for body*/
 
@@ -614,7 +612,7 @@ body > input[type="radio"] {
 	width: 560px;
 	height: 229px;
 	padding: 0;
-	margin: 0;
+	margin: 1px -2px;
 	background: url("../img/raspberries-background.png") no-repeat;
 }
 .section-right {
@@ -622,12 +620,11 @@ body > input[type="radio"] {
 	width: 560px;
 	height: 229px;
 	padding: 0;
-	margin: 0;
+	margin: 1px -4px;
 	background: url("../img/chocolate.png") no-repeat;
 }
 .info-content {
-	margin: 0;
-	padding: 20px 0px 20px 20px;
+	margin: 16px 0px 10px 19px;
 	font-size: 35px;
 	line-height: 41px;
 }
@@ -732,8 +729,6 @@ body > input[type="radio"] {
 	position: absolute;
 	top: 2px;
 	left: 0;
-	width: 61px;
-	height: 61px;
 	background: url("../img/hit.png") no-repeat;
 }
 .display-btn {
@@ -783,7 +778,7 @@ body > input[type="radio"] {
 
 .advantages {
 	width: 100%;
-	margin-bottom: 40px;
+	margin-bottom: 57px;
 	padding: 10px 0 0 20px;
 	background-image: url("../img/wafer-background.jpg");
 	color: black;
@@ -794,7 +789,7 @@ body > input[type="radio"] {
 	float: left;
 	width: 50%;	
 	margin: 0;
-	padding: 22px 20px 25px 62px;
+	padding: 15px 0px 7px 61px;
 	font-size: 16px;
 	line-height: 22px;
 	box-sizing: border-box;
@@ -802,18 +797,23 @@ body > input[type="radio"] {
 .iconica1 {
 	background: no-repeat;
 	background-image: url("../img/ice-cream.png");
+	background-position: -2px 2px;
 }
 .iconica2 {
 	background: no-repeat;
-	background-image: url("../img/leaf.png");
+	background-image: url("../img/cow.png");
+	background-position: 4px 2px;
+
 }
 .iconica3 {
 	background: no-repeat;
-	background-image: url("../img/cow.png");
+	background-image: url("../img/leaf.png");
+	background-position: -2px 2px;
 }
 .iconica4 {
 	background: no-repeat;
 	background-image: url("../img/thermometer.png");
+	background-position: 4px 2px;
 }
 .block {
 	width: 100%;
@@ -829,7 +829,7 @@ body > input[type="radio"] {
 	border-radius: 15px;
 }
 .news div {
-	padding: 30px 0px 15px 20px;
+	padding: 23px 0px 5px 18px;
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: normal;
@@ -837,7 +837,7 @@ body > input[type="radio"] {
 }
 .news a {
 	display: inline-block;
-	padding-left:20px;
+	padding: 0px 0px 10px 18px;
 	font-size: 24px;
 	line-height: 30px;
 	width: 285px;
@@ -857,17 +857,16 @@ body > input[type="radio"] {
 	border-radius: 15px;
 }
 .subscription div{
-	padding: 40px 25px 0 25px;
+	padding: 33px 10px 0 31px;
 }
 .forma {
-	width: 508px;
+	width: 530px;
 	margin: 0 auto;
 
 }
 .subscription input[type="text"]{
-	margin-top: 40px;
-	width: 330px;
-	padding: 12px;
+	margin: 37px 0px 0px 4px;
+	padding: 10px 170px 8px 14px;
 	font-size: 16px;
 	line-height: 24px;
 	border-radius: 5px;
@@ -876,9 +875,9 @@ body > input[type="radio"] {
 }
 .subscription input[type="submit"] {
 	display: inline-block;
-	margin-top: 40px;
-	margin-left: 10px;
-	padding: 12px 22px;
+	margin-top: 36px;
+	margin-left: 19px;
+	padding: 12px 19px;
 	font-weight: 600;
 	font-size: 18px;
 	vertical-align: top;
@@ -1258,21 +1257,24 @@ body > input[type="radio"] {
 	width: 250px;	
 }
 .content1 {
-	margin-bottom: 5px;
+	margin: 2px 0px 5px 1px;
+}
+.content2 {
+	margin: 0px 0px 3px 0px;
 }
 .content3 {
-	margin-top: 20px;
+	margin-top: 17px;
 	margin-bottom: 5px;
 }
 
 .content4 {
-	margin-bottom: 5px;
+	margin-bottom: 1px;
 }
 
 .form-btn {
 	display: inline-block;
-	margin-top: 20px;
-	padding: 14px 30px;
+	margin-top: 25px;
+	padding: 9px 27px 12px 30px;
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 24px;
@@ -1310,14 +1312,15 @@ background: linear-gradient(#f58669 0%, #ec6f5e 100%);
 }
 .footer-social {
 	float: left;
-	width: 185px;
-	padding: 0 20px;
+	width: 210px;
+	padding: 0px;
+	margin: 0px;
 }
 .social-btn {
 	display: inline-block;
 	width: 30px;
 	height: 30px;
-	margin-right: 12px;
+	margin: 7px 1px 10px 14px;
 	font-size: 0;
 	text-decoration: 0;
 	border-radius: 50%;
@@ -1355,12 +1358,12 @@ background: linear-gradient(#f58669 0%, #ec6f5e 100%);
 .footer-documentation {
 	float: left;
 	width: 335px;
-	margin-left: 180px;
+	margin-left: 198px;
 	font-weight: normal;
 }
 .footer-documentation a {
 	display: inline-block;
-	padding: 0 10px 0 18px;
+	padding: 0 6px 0 22px;
 	color: #ffffff;
 	font-size: 13px;
 	line-height: 16px;
@@ -1383,17 +1386,17 @@ background: linear-gradient(#f58669 0%, #ec6f5e 100%);
 }
 .footer-documentation .for-providers {
 	background: url("../img/heart.png") no-repeat;
+	background-position: 0px 2px;
 	color: #ffffff;
 	opacity: 1;
 }
 .footer-copyright {
 	float: right;
-	margin: -15px 0 0 0;
+	margin: -14px 3px 0 0px;
 	font-size: 12px;
 	line-height: 16px;
 	font-weight: normal;
 }
 .footer-copyright a {
 	color: #ffffff;
-
 }
