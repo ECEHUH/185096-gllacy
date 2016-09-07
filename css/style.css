@@ -71,63 +71,60 @@ body > input[type="radio"] {
 }
 
 .slide-title {
-  width: 840px;
-  margin: 0 auto;
-  margin-bottom: 10px;
-
-  font-weight: 800;
-  font-size: 60px;
-  line-height: 70px
+	width: 700px;
+	margin: 3px 220px;
+	margin-bottom: 10px;
+	font-weight: 800;
+	font-size: 60px;
+	line-height: 61px;
 }
 
 .slide-btn {
-  display: inline-block;
-  margin-top: 5px;
-  padding: 12px 50px;
-  font-weight: 600;
-  font-size: 31px;
-  line-height: 41px;
-  vertical-align: top;
-  color: #ffffff;
-  text-decoration: none;
-  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-
-  background: #f26843;
-  background:    -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
-  background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
-  background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
-  border-radius: 100px;
-  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+	display: inline-block;
+	margin-top: 20px;
+	padding: 9px 41px;
+	font-weight: 600;
+	font-size: 31px;
+	line-height: 41px;
+	vertical-align: top;
+	color: #ffffff;
+	text-decoration: none;
+	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+	background: #f26843;
+	background: -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
+	background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
+	background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+	border-radius: 100px;
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
 
 .slide-btn:hover {
-  background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
-  background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
-  background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
-  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+	background: -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+	background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+	background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .slide-btn:active {
-  background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
-  background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
-  background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
-  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+	background: -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
+	background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
+	background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .slider-controls {
-  position: absolute;
-  bottom: 25px;
-  left: 0;
-  z-index: 20;
-
-  font-size: 0;
+	position: absolute;
+	bottom: 21px;
+	left: -2px;
+	z-index: 20;
+	font-size: 0;
 }
 
 .slider-controls label {
 	display: inline-block;
 	width: 17px;
 	height: 17px;
-	margin-right: 8px;
+	margin-right: 7px;
 	vertical-align: top;
 	background-color: transparent;
 	border: 2px solid #ffffff;
@@ -184,8 +181,8 @@ body > input[type="radio"] {
 }
 .mini-logo {
 	float: left;
-	padding-top: 15px;
-	margin-right: 15px;
+	padding: 13px 0px 0px 2px;
+	margin: 0px 0px 0px -9px;
 }
 .menu-left {
 	float: left;
@@ -194,7 +191,7 @@ body > input[type="radio"] {
 }
 .main-menu {
 	list-style: none;
-	margin: 0px;
+	margin: -1px 19px;
 	padding: 0px;
 }
 
@@ -202,11 +199,11 @@ body > input[type="radio"] {
 	position: relative;
 	display: inline-block;
 	white-space: nowrap;
-	min-height: 36px;
+	min-height: 76px;
 }
 .main-menu > li > a {
 	display: inline-block;
-	margin-right: 10px;
+	margin-right: -2px;
 	padding: 6px 13px;
 	color: white;
 	font-size: 16px
@@ -309,16 +306,19 @@ body > input[type="radio"] {
 }
 
 .login {
+	position: absolute;
+	left: 19px;
+	top: -3px;
 	display: inline-block;
 	width: 60px;
-	padding: 8px 15px 10px 15px;
+	padding: 8px 17px 8px 44px;
 	text-decoration: none;
 	text-align: right;
 	vertical-align: top;
 	color: white;
 	background: #a1b4a9;
 	background-image: url("../img/spritesheet.png");
-	background-position: 10px -28px;
+	background-position: 11px -29px;
 	background-repeat: no-repeat;
 	border-radius: 20px;
 }
@@ -338,7 +338,8 @@ body > input[type="radio"] {
 .wrapper-login {
 	display: inline-block;
 	position: relative;
-    top: -22px;
+	margin-right: 6px;
+	top: -23px;
 }
 .wrapper-login:hover .login2{
 	display: block;
@@ -384,9 +385,12 @@ body > input[type="radio"] {
 	border-radius: 5px;
 }
 .basket {
+	position: absolute;
+	right: 101px;
+	top: 26px;
 	display: inline-block;
 	width: 80px;
-	padding: 8px 44px 10px 10px;
+	padding: 8px 34px 7px 44px;
 	margin: 0;
 	text-decoration: none;
 	text-align: right;
@@ -394,7 +398,7 @@ body > input[type="radio"] {
 	color: white;
 	background: #a1b4a9;
 	background-image: url("../img/spritesheet.png");
-	background-position: 12px 3px;
+	background-position: 12px 1px;
 	background-repeat: no-repeat;
 	border-radius: 20px;
 }
@@ -526,14 +530,17 @@ body > input[type="radio"] {
 
 .search {
 	position: relative;
+	top: 5px;
+	left: 12px;
 	display: inline-block;
 	width: 32px;
 	height: 32px;
-	margin: 1px 0;
+	margin: 0px;
+	padding: 0px;
 	background: #a1b4a9;
 	background-image: url("../img/spritesheet.png");
 	background-repeat: no-repeat;
-	background-position: 3px -56px;
+	background-position: 2px -57px;
 	border-radius: 50%;
 }
 .search:hover{
@@ -580,8 +587,7 @@ body > input[type="radio"] {
 }
 
 .main-header .num-phone {
-	margin: 0px;
-	margin-top: 5px;
+	margin: 5px -4px 0px 0px;
 	padding: 0px;
 	font-size: 22px;
 	line-height: 24px;
@@ -590,6 +596,10 @@ body > input[type="radio"] {
 
 .main-header .num-phone, .main-header .time-work {
 	float: right;
+}
+.time-work {
+	margin-top: 56px;
+	margin-right: -2px;
 }
 /*Style for body*/
 
