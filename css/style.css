@@ -202,6 +202,7 @@ body > input[type="radio"] {
 	position: relative;
 	display: inline-block;
 	white-space: nowrap;
+	min-height: 36px;
 }
 .main-menu > li > a {
 	display: inline-block;
